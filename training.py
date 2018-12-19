@@ -1,43 +1,53 @@
 #!/usr/local/bin/python3
 
-import sys, time
+import sys, time, getopt
 import torch
 import torch.utils.data as Data
 import torch.nn as Nn
 import torch.optim as Optim
-from matplotlib import pyplot
+import matplotlib.pyplot as Plot
 
-# Hyber Param
+# Print Usage
 #
-LR          = 0.1
+def usage():
+    print('Please Contact Qian.(yuqian@xilinx.com)')
+
+# Parameters
+#
 BATCH_SIZE  = 4
-DATA_NORM   = torch.Tensor([2048, 2048, 256, 16, 2, 2048])
+LR          = 0.1
+DATA_LABEL  = {
+    'LOAD' : ['corenum', 'mode', 'width', 'length', 'jump', 'offset'],
+    'SAVE' : ['corenum', 'mode', 'width', 'length', 'jump', 'offset'],
+    'CONV' : [],
+    'ELEW' : [],
+    'POOL' : []
+}
+DATA_NORM   = {
+    'LOAD' : torch.Tensor([16, 2, 2048, 2048, 2048, 256]),
+    'SAVE' : torch.Tensor([16, 2, 2048, 2048, 2048, 256]),
+    'CONV' : [],
+    'ELEW' : [],
+    'POOL' : []
+}
 
 # Func: Parse Data File
 #
-def read_data(fname):
+def read_data(fname, itype):
     data_list   = []
     targets_list= []
     for line in open(fname, 'r'):
         elements    = line.strip().split()
-        if len(elements) < 2 :
-            break
-        data_list.append([
-            float(elements[elements.index('width')+1]),
-            float(elements[elements.index('length')+1]),
-            float(elements[elements.index('offset')+1]),
-            float(elements[elements.index('corenum')+1]),
-            float(elements[elements.index('mode')+1]),
-            float(elements[elements.index('jump')+1])
-        ])
-        targets_list.append([
-            float(elements[elements.index('eff')+1])
-        ])
-    data    = torch.Tensor(data_list) / DATA_NORM
+        if len(elements) > 1 :
+            data_ele    = []
+            for label in DATA_LABEL[itype]:
+                data_ele.append(float(elements[elements.index(label)+1]))
+            data_list.append(data_ele)
+            targets_list.append([float(elements[elements.index('eff')+1])])
+    data    = torch.Tensor(data_list) / DATA_NORM[itype]
     targets = torch.Tensor(targets_list)
     dataset = Data.TensorDataset(data, targets)
     print('[INFO] Read Data...Done.')
-#return data, targets
     return dataset 
 
 # Func: Build Network
@@ -76,9 +86,19 @@ def train_net(net, func_optim, func_loss, dataset):
  
 
 # Main
-net, func_optim, func_loss  = build_net()
-dataset = read_data('./simdata/load/1.txt')
-train_net(net, func_optim, func_loss, dataset)
-torch.save(net, "loadnet.pkl")
+opts, args  = getopt.getopt(sys.argv[1:], 'hf:t:')
+for op, value in opts:
+    if op == '-f':
+        fname   = value
+    elif op == '-t':
+        itype= value
+    elif op == '-h':
+        usage()
+        sys.exit()
 
-print(net(torch.Tensor([1024, 4, 0, 10, 2, 1024])/DATA_NORM)) #0.6
+net, func_optim, func_loss  = build_net()
+dataset = read_data(fname, itype)
+train_net(net, func_optim, func_loss, dataset)
+torch.save(net, itype+".net.pkl")
+
+print(net(torch.Tensor([10, 2, 1024, 4, 1024, 0])/DATA_NORM['LOAD'])) #0.6

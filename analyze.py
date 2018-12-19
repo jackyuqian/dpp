@@ -18,7 +18,7 @@ D_MISC_INTERVAL     = 10    # Cycles
 #Print Help
 #
 def usage():
-    print 'Connect Qian. (yuqian@xilinx.com)'
+    print('Please Contact Qian.(yuqian@xilinx.com)')
 
 def ddr_efficiency(ops):
     if ops > 40960:
