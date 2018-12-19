@@ -1,0 +1,844 @@
+LOAD 0000 0000 mode 2 bank_addr 512 bank_id 0 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891840
+
+CONVINIT 0000 0000 act_type 1 shift_cut 7 jump_read 64 stride_out 1 jump_read_endl 1 stride_h 1 kernel_h 1 valid_pixel_parallel 4 stride_offset_in 0 jump_write 16 stride_w 1 kernel_w 1 stride_offset_out 0 jump_write_endl 1
+
+LOAD 0000 0000 mode 2 bank_addr 512 bank_id 1 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891848
+
+LOAD 0000 0000 mode 2 bank_addr 512 bank_id 2 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891856
+
+LOAD 0000 0000 mode 2 bank_addr 512 bank_id 3 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891864
+
+LOAD 0000 0000 mode 2 bank_addr 512 bank_id 4 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891872
+
+LOAD 0000 0000 mode 2 bank_addr 512 bank_id 5 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891880
+
+LOAD 0000 0000 mode 2 bank_addr 512 bank_id 6 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891888
+
+LOAD 0000 0000 mode 2 bank_addr 512 bank_id 7 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891896
+
+LOAD 0000 0000 mode 2 bank_addr 513 bank_id 0 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891904
+
+LOAD 0000 0000 mode 2 bank_addr 513 bank_id 1 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891912
+
+LOAD 0000 0000 mode 2 bank_addr 513 bank_id 2 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891920
+
+LOAD 0000 0000 mode 2 bank_addr 513 bank_id 3 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891928
+
+LOAD 0000 0000 mode 2 bank_addr 513 bank_id 4 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891936
+
+LOAD 0000 0000 mode 2 bank_addr 513 bank_id 5 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891944
+
+LOAD 0000 0000 mode 2 bank_addr 513 bank_id 6 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891952
+
+LOAD 0000 0000 mode 2 bank_addr 513 bank_id 7 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891960
+
+LOAD 0000 0000 mode 2 bank_addr 514 bank_id 0 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891968
+
+LOAD 0000 0000 mode 2 bank_addr 514 bank_id 1 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891976
+
+LOAD 0000 0000 mode 2 bank_addr 514 bank_id 2 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891984
+
+LOAD 0000 0000 mode 2 bank_addr 514 bank_id 3 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 891992
+
+LOAD 0000 0000 mode 2 bank_addr 514 bank_id 4 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892000
+
+LOAD 0000 0000 mode 2 bank_addr 514 bank_id 5 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892008
+
+LOAD 0000 0000 mode 2 bank_addr 514 bank_id 6 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892016
+
+LOAD 0000 0000 mode 2 bank_addr 514 bank_id 7 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892024
+
+LOAD 0000 0000 mode 2 bank_addr 515 bank_id 0 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892032
+
+LOAD 0000 0000 mode 2 bank_addr 515 bank_id 1 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892040
+
+LOAD 0000 0000 mode 2 bank_addr 515 bank_id 2 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892048
+
+LOAD 0000 0000 mode 2 bank_addr 515 bank_id 3 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892056
+
+LOAD 0000 0000 mode 2 bank_addr 515 bank_id 4 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892064
+
+LOAD 0000 0000 mode 2 bank_addr 515 bank_id 5 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892072
+
+LOAD 0000 0000 mode 2 bank_addr 515 bank_id 6 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892080
+
+LOAD 0000 0000 mode 2 bank_addr 515 bank_id 7 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892088
+
+LOAD 0000 0000 mode 2 bank_addr 516 bank_id 0 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892096
+
+LOAD 0000 0000 mode 2 bank_addr 516 bank_id 1 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892104
+
+LOAD 0000 0000 mode 2 bank_addr 516 bank_id 2 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892112
+
+LOAD 0000 0000 mode 2 bank_addr 516 bank_id 3 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892120
+
+LOAD 0000 0000 mode 2 bank_addr 516 bank_id 4 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892128
+
+LOAD 0000 0000 mode 2 bank_addr 516 bank_id 5 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892136
+
+LOAD 0000 0000 mode 2 bank_addr 516 bank_id 6 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892144
+
+LOAD 0000 0000 mode 2 bank_addr 516 bank_id 7 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892152
+
+LOAD 0000 0000 mode 2 bank_addr 517 bank_id 0 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892160
+
+LOAD 0000 0000 mode 2 bank_addr 517 bank_id 1 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892168
+
+LOAD 0000 0000 mode 2 bank_addr 517 bank_id 2 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892176
+
+LOAD 0000 0000 mode 2 bank_addr 517 bank_id 3 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892184
+
+LOAD 0000 0000 mode 2 bank_addr 517 bank_id 4 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892192
+
+LOAD 0000 0000 mode 2 bank_addr 517 bank_id 5 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892200
+
+LOAD 0000 0000 mode 2 bank_addr 517 bank_id 6 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892208
+
+LOAD 0000 0000 mode 2 bank_addr 517 bank_id 7 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892216
+
+LOAD 0000 0000 mode 2 bank_addr 518 bank_id 0 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892224
+
+LOAD 0000 0000 mode 2 bank_addr 518 bank_id 1 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892232
+
+LOAD 0000 0000 mode 2 bank_addr 518 bank_id 2 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892240
+
+LOAD 0000 0000 mode 2 bank_addr 518 bank_id 3 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892248
+
+LOAD 0000 0000 mode 2 bank_addr 518 bank_id 4 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892256
+
+LOAD 0000 0000 mode 2 bank_addr 518 bank_id 5 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892264
+
+LOAD 0000 0000 mode 2 bank_addr 518 bank_id 6 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892272
+
+LOAD 0000 0000 mode 2 bank_addr 518 bank_id 7 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892280
+
+LOAD 0000 0000 mode 2 bank_addr 519 bank_id 0 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892288
+
+LOAD 0000 0000 mode 2 bank_addr 519 bank_id 1 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892296
+
+LOAD 0000 0000 mode 2 bank_addr 519 bank_id 2 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892304
+
+LOAD 0000 0000 mode 2 bank_addr 519 bank_id 3 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892312
+
+LOAD 0000 0000 mode 2 bank_addr 519 bank_id 4 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892320
+
+LOAD 0000 0000 mode 2 bank_addr 519 bank_id 5 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892328
+
+LOAD 0000 0000 mode 2 bank_addr 519 bank_id 6 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892336
+
+LOAD 0000 0000 mode 2 bank_addr 519 bank_id 7 jump_read 128 jump_write 1 length 1 channel 8 reg_id 0 ddr_addr 892344
+
+LOAD 0000 0000 mode 1 bank_addr 0 bank_id 0 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 23883776
+
+LOAD 0000 0000 mode 1 bank_addr 0 bank_id 1 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 23941120
+
+LOAD 0000 0000 mode 1 bank_addr 0 bank_id 2 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 23998464
+
+LOAD 0000 0000 mode 1 bank_addr 0 bank_id 3 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24055808
+
+LOAD 0000 0000 mode 2 bank_addr 0 bank_id 0 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 892352
+
+LOAD 0000 0000 mode 2 bank_addr 0 bank_id 1 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 892864
+
+LOAD 0000 0000 mode 2 bank_addr 0 bank_id 2 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 893376
+
+LOAD 0000 0000 mode 2 bank_addr 0 bank_id 3 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 893888
+
+LOAD 0000 0000 mode 2 bank_addr 0 bank_id 4 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 894400
+
+LOAD 0000 0000 mode 2 bank_addr 0 bank_id 5 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 894912
+
+LOAD 0000 0000 mode 2 bank_addr 0 bank_id 6 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 895424
+
+LOAD 0000 0000 mode 2 bank_addr 0 bank_id 7 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 895936
+
+LOAD 0000 0000 mode 2 bank_addr 0 bank_id 8 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 896448
+
+LOAD 0000 0000 mode 2 bank_addr 0 bank_id 9 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 896960
+
+LOAD 0000 0000 mode 2 bank_addr 0 bank_id 10 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 897472
+
+LOAD 0000 0000 mode 2 bank_addr 0 bank_id 11 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 897984
+
+LOAD 0000 0000 mode 2 bank_addr 0 bank_id 12 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 898496
+
+LOAD 0000 0000 mode 2 bank_addr 0 bank_id 13 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 899008
+
+LOAD 0000 0000 mode 2 bank_addr 0 bank_id 14 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 899520
+
+LOAD 0000 0100 mode 2 bank_addr 0 bank_id 15 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 900032
+
+CONV 0001 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 0 bank_id_in 0 bank_id_out 4 bank_addr_weights 0 length 16 bias_offset 0 bank_addr_bias 512
+
+LOAD 0000 0000 mode 2 bank_addr 64 bank_id 0 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 900544
+
+LOAD 0000 0000 mode 2 bank_addr 64 bank_id 1 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 901056
+
+LOAD 0000 0000 mode 2 bank_addr 64 bank_id 2 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 901568
+
+LOAD 0000 0000 mode 2 bank_addr 64 bank_id 3 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 902080
+
+LOAD 0000 0000 mode 2 bank_addr 64 bank_id 4 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 902592
+
+LOAD 0000 0000 mode 2 bank_addr 64 bank_id 5 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 903104
+
+LOAD 0000 0000 mode 2 bank_addr 64 bank_id 6 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 903616
+
+LOAD 0000 0000 mode 2 bank_addr 64 bank_id 7 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 904128
+
+LOAD 0000 0000 mode 2 bank_addr 64 bank_id 8 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 904640
+
+LOAD 0000 0000 mode 2 bank_addr 64 bank_id 9 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 905152
+
+LOAD 0000 0000 mode 2 bank_addr 64 bank_id 10 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 905664
+
+LOAD 0000 0000 mode 2 bank_addr 64 bank_id 11 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 906176
+
+LOAD 0000 0000 mode 2 bank_addr 64 bank_id 12 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 906688
+
+LOAD 0000 0000 mode 2 bank_addr 64 bank_id 13 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 907200
+
+LOAD 0000 0000 mode 2 bank_addr 64 bank_id 14 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 907712
+
+LOAD 0000 0100 mode 2 bank_addr 64 bank_id 15 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 908224
+
+CONV 0001 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 2 bank_id_in 0 bank_id_out 4 bank_addr_weights 64 length 16 bias_offset 0 bank_addr_bias 513
+
+LOAD 0000 0000 mode 2 bank_addr 128 bank_id 0 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 908736
+
+LOAD 0000 0000 mode 2 bank_addr 128 bank_id 1 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 909248
+
+LOAD 0000 0000 mode 2 bank_addr 128 bank_id 2 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 909760
+
+LOAD 0000 0000 mode 2 bank_addr 128 bank_id 3 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 910272
+
+LOAD 0000 0000 mode 2 bank_addr 128 bank_id 4 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 910784
+
+LOAD 0000 0000 mode 2 bank_addr 128 bank_id 5 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 911296
+
+LOAD 0000 0000 mode 2 bank_addr 128 bank_id 6 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 911808
+
+LOAD 0000 0000 mode 2 bank_addr 128 bank_id 7 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 912320
+
+LOAD 0000 0000 mode 2 bank_addr 128 bank_id 8 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 912832
+
+LOAD 0000 0000 mode 2 bank_addr 128 bank_id 9 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 913344
+
+LOAD 0000 0000 mode 2 bank_addr 128 bank_id 10 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 913856
+
+LOAD 0000 0000 mode 2 bank_addr 128 bank_id 11 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 914368
+
+LOAD 0000 0000 mode 2 bank_addr 128 bank_id 12 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 914880
+
+LOAD 0000 0000 mode 2 bank_addr 128 bank_id 13 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 915392
+
+LOAD 0000 0000 mode 2 bank_addr 128 bank_id 14 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 915904
+
+LOAD 0000 0100 mode 2 bank_addr 128 bank_id 15 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 916416
+
+CONV 0001 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 4 bank_id_in 0 bank_id_out 4 bank_addr_weights 128 length 16 bias_offset 0 bank_addr_bias 514
+
+LOAD 0000 0000 mode 2 bank_addr 192 bank_id 0 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 916928
+
+LOAD 0000 0000 mode 2 bank_addr 192 bank_id 1 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 917440
+
+LOAD 0000 0000 mode 2 bank_addr 192 bank_id 2 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 917952
+
+LOAD 0000 0000 mode 2 bank_addr 192 bank_id 3 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 918464
+
+LOAD 0000 0000 mode 2 bank_addr 192 bank_id 4 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 918976
+
+LOAD 0000 0000 mode 2 bank_addr 192 bank_id 5 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 919488
+
+LOAD 0000 0000 mode 2 bank_addr 192 bank_id 6 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 920000
+
+LOAD 0000 0000 mode 2 bank_addr 192 bank_id 7 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 920512
+
+LOAD 0000 0000 mode 2 bank_addr 192 bank_id 8 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 921024
+
+LOAD 0000 0000 mode 2 bank_addr 192 bank_id 9 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 921536
+
+LOAD 0000 0000 mode 2 bank_addr 192 bank_id 10 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 922048
+
+LOAD 0000 0000 mode 2 bank_addr 192 bank_id 11 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 922560
+
+LOAD 0000 0000 mode 2 bank_addr 192 bank_id 12 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 923072
+
+LOAD 0000 0000 mode 2 bank_addr 192 bank_id 13 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 923584
+
+LOAD 0000 0000 mode 2 bank_addr 192 bank_id 14 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 924096
+
+LOAD 0000 0100 mode 2 bank_addr 192 bank_id 15 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 924608
+
+CONV 0001 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 6 bank_id_in 0 bank_id_out 4 bank_addr_weights 192 length 16 bias_offset 0 bank_addr_bias 515
+
+LOAD 0000 0000 mode 2 bank_addr 256 bank_id 0 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 925120
+
+LOAD 0000 0000 mode 2 bank_addr 256 bank_id 1 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 925632
+
+LOAD 0000 0000 mode 2 bank_addr 256 bank_id 2 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 926144
+
+LOAD 0000 0000 mode 2 bank_addr 256 bank_id 3 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 926656
+
+LOAD 0000 0000 mode 2 bank_addr 256 bank_id 4 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 927168
+
+LOAD 0000 0000 mode 2 bank_addr 256 bank_id 5 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 927680
+
+LOAD 0000 0000 mode 2 bank_addr 256 bank_id 6 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 928192
+
+LOAD 0000 0000 mode 2 bank_addr 256 bank_id 7 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 928704
+
+LOAD 0000 0000 mode 2 bank_addr 256 bank_id 8 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 929216
+
+LOAD 0000 0000 mode 2 bank_addr 256 bank_id 9 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 929728
+
+LOAD 0000 0000 mode 2 bank_addr 256 bank_id 10 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 930240
+
+LOAD 0000 0000 mode 2 bank_addr 256 bank_id 11 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 930752
+
+LOAD 0000 0000 mode 2 bank_addr 256 bank_id 12 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 931264
+
+LOAD 0000 0000 mode 2 bank_addr 256 bank_id 13 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 931776
+
+LOAD 0000 0000 mode 2 bank_addr 256 bank_id 14 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 932288
+
+LOAD 0000 0100 mode 2 bank_addr 256 bank_id 15 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 932800
+
+CONV 0001 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 8 bank_id_in 0 bank_id_out 4 bank_addr_weights 256 length 16 bias_offset 0 bank_addr_bias 516
+
+LOAD 0000 0000 mode 2 bank_addr 320 bank_id 0 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 933312
+
+LOAD 0000 0000 mode 2 bank_addr 320 bank_id 1 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 933824
+
+LOAD 0000 0000 mode 2 bank_addr 320 bank_id 2 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 934336
+
+LOAD 0000 0000 mode 2 bank_addr 320 bank_id 3 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 934848
+
+LOAD 0000 0000 mode 2 bank_addr 320 bank_id 4 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 935360
+
+LOAD 0000 0000 mode 2 bank_addr 320 bank_id 5 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 935872
+
+LOAD 0000 0000 mode 2 bank_addr 320 bank_id 6 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 936384
+
+LOAD 0000 0000 mode 2 bank_addr 320 bank_id 7 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 936896
+
+LOAD 0000 0000 mode 2 bank_addr 320 bank_id 8 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 937408
+
+LOAD 0000 0000 mode 2 bank_addr 320 bank_id 9 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 937920
+
+LOAD 0000 0000 mode 2 bank_addr 320 bank_id 10 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 938432
+
+LOAD 0000 0000 mode 2 bank_addr 320 bank_id 11 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 938944
+
+LOAD 0000 0000 mode 2 bank_addr 320 bank_id 12 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 939456
+
+LOAD 0000 0000 mode 2 bank_addr 320 bank_id 13 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 939968
+
+LOAD 0000 0000 mode 2 bank_addr 320 bank_id 14 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 940480
+
+LOAD 0000 0100 mode 2 bank_addr 320 bank_id 15 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 940992
+
+CONV 0001 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 10 bank_id_in 0 bank_id_out 4 bank_addr_weights 320 length 16 bias_offset 0 bank_addr_bias 517
+
+LOAD 0000 0000 mode 2 bank_addr 384 bank_id 0 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 941504
+
+LOAD 0000 0000 mode 2 bank_addr 384 bank_id 1 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 942016
+
+LOAD 0000 0000 mode 2 bank_addr 384 bank_id 2 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 942528
+
+LOAD 0000 0000 mode 2 bank_addr 384 bank_id 3 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 943040
+
+LOAD 0000 0000 mode 2 bank_addr 384 bank_id 4 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 943552
+
+LOAD 0000 0000 mode 2 bank_addr 384 bank_id 5 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 944064
+
+LOAD 0000 0000 mode 2 bank_addr 384 bank_id 6 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 944576
+
+LOAD 0000 0000 mode 2 bank_addr 384 bank_id 7 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 945088
+
+LOAD 0000 0000 mode 2 bank_addr 384 bank_id 8 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 945600
+
+LOAD 0000 0000 mode 2 bank_addr 384 bank_id 9 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 946112
+
+LOAD 0000 0000 mode 2 bank_addr 384 bank_id 10 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 946624
+
+LOAD 0000 0000 mode 2 bank_addr 384 bank_id 11 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 947136
+
+LOAD 0000 0000 mode 2 bank_addr 384 bank_id 12 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 947648
+
+LOAD 0000 0000 mode 2 bank_addr 384 bank_id 13 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 948160
+
+LOAD 0000 0000 mode 2 bank_addr 384 bank_id 14 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 948672
+
+LOAD 0000 0100 mode 2 bank_addr 384 bank_id 15 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 949184
+
+CONV 0001 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 12 bank_id_in 0 bank_id_out 4 bank_addr_weights 384 length 16 bias_offset 0 bank_addr_bias 518
+
+LOAD 0000 0000 mode 2 bank_addr 448 bank_id 0 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 949696
+
+LOAD 0000 0000 mode 2 bank_addr 448 bank_id 1 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 950208
+
+LOAD 0000 0000 mode 2 bank_addr 448 bank_id 2 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 950720
+
+LOAD 0000 0000 mode 2 bank_addr 448 bank_id 3 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 951232
+
+LOAD 0000 0000 mode 2 bank_addr 448 bank_id 4 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 951744
+
+LOAD 0000 0000 mode 2 bank_addr 448 bank_id 5 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 952256
+
+LOAD 0000 0000 mode 2 bank_addr 448 bank_id 6 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 952768
+
+LOAD 0000 0000 mode 2 bank_addr 448 bank_id 7 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 953280
+
+LOAD 0000 0000 mode 2 bank_addr 448 bank_id 8 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 953792
+
+LOAD 0000 0000 mode 2 bank_addr 448 bank_id 9 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 954304
+
+LOAD 0000 0000 mode 2 bank_addr 448 bank_id 10 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 954816
+
+LOAD 0000 0000 mode 2 bank_addr 448 bank_id 11 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 955328
+
+LOAD 0000 0000 mode 2 bank_addr 448 bank_id 12 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 955840
+
+LOAD 0000 0000 mode 2 bank_addr 448 bank_id 13 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 956352
+
+LOAD 0000 0000 mode 2 bank_addr 448 bank_id 14 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 956864
+
+LOAD 0000 0100 mode 2 bank_addr 448 bank_id 15 jump_read 512 jump_write 64 length 1 channel 512 reg_id 0 ddr_addr 957376
+
+CONV 0001 0011 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 14 bank_id_in 0 bank_id_out 4 bank_addr_weights 448 length 16 bias_offset 0 bank_addr_bias 519
+
+LOAD 0000 0000 mode 1 bank_addr 1024 bank_id 0 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24113152
+
+SAVE 0100 0000 mode 1 bank_addr 0 bank_id 4 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25489408
+
+LOAD 0000 0000 mode 1 bank_addr 1024 bank_id 1 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24170496
+
+SAVE 0000 0000 mode 1 bank_addr 0 bank_id 5 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25503744
+
+LOAD 0000 0000 mode 1 bank_addr 1024 bank_id 2 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24227840
+
+SAVE 0000 0000 mode 1 bank_addr 0 bank_id 6 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25518080
+
+LOAD 0000 0100 mode 1 bank_addr 1024 bank_id 3 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24285184
+
+SAVE 0000 0100 mode 1 bank_addr 0 bank_id 7 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25532416
+
+CONV 0001 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 256 bank_id_in 0 bank_id_out 4 bank_addr_weights 0 length 16 bias_offset 0 bank_addr_bias 512
+
+LOAD 0100 0000 mode 1 bank_addr 0 bank_id 0 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24342528
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 258 bank_id_in 0 bank_id_out 4 bank_addr_weights 64 length 16 bias_offset 0 bank_addr_bias 513
+
+LOAD 0000 0000 mode 1 bank_addr 0 bank_id 1 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24399872
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 260 bank_id_in 0 bank_id_out 4 bank_addr_weights 128 length 16 bias_offset 0 bank_addr_bias 514
+
+LOAD 0000 0000 mode 1 bank_addr 0 bank_id 2 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24457216
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 262 bank_id_in 0 bank_id_out 4 bank_addr_weights 192 length 16 bias_offset 0 bank_addr_bias 515
+
+LOAD 0000 0100 mode 1 bank_addr 0 bank_id 3 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24514560
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 264 bank_id_in 0 bank_id_out 4 bank_addr_weights 256 length 16 bias_offset 0 bank_addr_bias 516
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 266 bank_id_in 0 bank_id_out 4 bank_addr_weights 320 length 16 bias_offset 0 bank_addr_bias 517
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 268 bank_id_in 0 bank_id_out 4 bank_addr_weights 384 length 16 bias_offset 0 bank_addr_bias 518
+
+CONV 0000 0011 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 270 bank_id_in 0 bank_id_out 4 bank_addr_weights 448 length 16 bias_offset 0 bank_addr_bias 519
+
+LOAD 0100 0000 mode 1 bank_addr 1024 bank_id 0 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24571904
+
+SAVE 0100 0000 mode 1 bank_addr 256 bank_id 4 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25546752
+
+CONV 0001 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 512 bank_id_in 0 bank_id_out 4 bank_addr_weights 0 length 16 bias_offset 0 bank_addr_bias 512
+
+LOAD 0000 0000 mode 1 bank_addr 1024 bank_id 1 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24629248
+
+SAVE 0000 0000 mode 1 bank_addr 256 bank_id 5 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25561088
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 514 bank_id_in 0 bank_id_out 4 bank_addr_weights 64 length 16 bias_offset 0 bank_addr_bias 513
+
+LOAD 0000 0000 mode 1 bank_addr 1024 bank_id 2 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24686592
+
+SAVE 0000 0000 mode 1 bank_addr 256 bank_id 6 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25575424
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 516 bank_id_in 0 bank_id_out 4 bank_addr_weights 128 length 16 bias_offset 0 bank_addr_bias 514
+
+LOAD 0000 0100 mode 1 bank_addr 1024 bank_id 3 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24743936
+
+SAVE 0000 0100 mode 1 bank_addr 256 bank_id 7 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25589760
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 518 bank_id_in 0 bank_id_out 4 bank_addr_weights 192 length 16 bias_offset 0 bank_addr_bias 515
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 520 bank_id_in 0 bank_id_out 4 bank_addr_weights 256 length 16 bias_offset 0 bank_addr_bias 516
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 522 bank_id_in 0 bank_id_out 4 bank_addr_weights 320 length 16 bias_offset 0 bank_addr_bias 517
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 524 bank_id_in 0 bank_id_out 4 bank_addr_weights 384 length 16 bias_offset 0 bank_addr_bias 518
+
+CONV 0000 0011 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 15 bank_addr_out 526 bank_id_in 0 bank_id_out 4 bank_addr_weights 448 length 16 bias_offset 0 bank_addr_bias 519
+
+LOAD 0100 0000 mode 1 bank_addr 0 bank_id 0 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24801280
+
+SAVE 0100 0000 mode 1 bank_addr 512 bank_id 4 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25604096
+
+CONV 0001 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 12 bank_addr_out 768 bank_id_in 0 bank_id_out 4 bank_addr_weights 0 length 16 bias_offset 0 bank_addr_bias 512
+
+LOAD 0000 0000 mode 1 bank_addr 0 bank_id 1 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24858624
+
+SAVE 0000 0000 mode 1 bank_addr 512 bank_id 5 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25618432
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 12 bank_addr_out 770 bank_id_in 0 bank_id_out 4 bank_addr_weights 64 length 16 bias_offset 0 bank_addr_bias 513
+
+LOAD 0000 0000 mode 1 bank_addr 0 bank_id 2 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24915968
+
+SAVE 0000 0000 mode 1 bank_addr 512 bank_id 6 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25632768
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 12 bank_addr_out 772 bank_id_in 0 bank_id_out 4 bank_addr_weights 128 length 16 bias_offset 0 bank_addr_bias 514
+
+LOAD 0000 0100 mode 1 bank_addr 0 bank_id 3 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 24973312
+
+SAVE 0000 0100 mode 1 bank_addr 512 bank_id 7 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25647104
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 12 bank_addr_out 774 bank_id_in 0 bank_id_out 4 bank_addr_weights 192 length 16 bias_offset 0 bank_addr_bias 515
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 12 bank_addr_out 776 bank_id_in 0 bank_id_out 4 bank_addr_weights 256 length 16 bias_offset 0 bank_addr_bias 516
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 12 bank_addr_out 778 bank_id_in 0 bank_id_out 4 bank_addr_weights 320 length 16 bias_offset 0 bank_addr_bias 517
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 12 bank_addr_out 780 bank_id_in 0 bank_id_out 4 bank_addr_weights 384 length 16 bias_offset 0 bank_addr_bias 518
+
+CONV 0000 0011 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 12 bank_addr_out 782 bank_id_in 0 bank_id_out 4 bank_addr_weights 448 length 16 bias_offset 0 bank_addr_bias 519
+
+LOAD 0100 0000 mode 1 bank_addr 1024 bank_id 0 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 25030656
+
+SAVE 0100 0000 mode 1 bank_addr 768 bank_id 4 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25661440
+
+CONV 0001 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 8 bank_addr_out 1024 bank_id_in 0 bank_id_out 4 bank_addr_weights 0 length 16 bias_offset 0 bank_addr_bias 512
+
+LOAD 0000 0000 mode 1 bank_addr 1024 bank_id 1 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 25088000
+
+SAVE 0000 0000 mode 1 bank_addr 768 bank_id 5 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25675776
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 8 bank_addr_out 1026 bank_id_in 0 bank_id_out 4 bank_addr_weights 64 length 16 bias_offset 0 bank_addr_bias 513
+
+LOAD 0000 0000 mode 1 bank_addr 1024 bank_id 2 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 25145344
+
+SAVE 0000 0000 mode 1 bank_addr 768 bank_id 6 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25690112
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 8 bank_addr_out 1028 bank_id_in 0 bank_id_out 4 bank_addr_weights 128 length 16 bias_offset 0 bank_addr_bias 514
+
+LOAD 0000 0100 mode 1 bank_addr 1024 bank_id 3 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 25202688
+
+SAVE 0000 0100 mode 1 bank_addr 768 bank_id 7 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25704448
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 8 bank_addr_out 1030 bank_id_in 0 bank_id_out 4 bank_addr_weights 192 length 16 bias_offset 0 bank_addr_bias 515
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 8 bank_addr_out 1032 bank_id_in 0 bank_id_out 4 bank_addr_weights 256 length 16 bias_offset 0 bank_addr_bias 516
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 8 bank_addr_out 1034 bank_id_in 0 bank_id_out 4 bank_addr_weights 320 length 16 bias_offset 0 bank_addr_bias 517
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 8 bank_addr_out 1036 bank_id_in 0 bank_id_out 4 bank_addr_weights 384 length 16 bias_offset 0 bank_addr_bias 518
+
+CONV 0000 0011 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 8 bank_addr_out 1038 bank_id_in 0 bank_id_out 4 bank_addr_weights 448 length 16 bias_offset 0 bank_addr_bias 519
+
+LOAD 0100 0000 mode 1 bank_addr 0 bank_id 0 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 25260032
+
+SAVE 0100 0000 mode 1 bank_addr 1024 bank_id 4 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25718784
+
+CONV 0001 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 4 bank_addr_out 1280 bank_id_in 0 bank_id_out 4 bank_addr_weights 0 length 16 bias_offset 0 bank_addr_bias 512
+
+LOAD 0000 0000 mode 1 bank_addr 0 bank_id 1 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 25317376
+
+SAVE 0000 0000 mode 1 bank_addr 1024 bank_id 5 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25733120
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 4 bank_addr_out 1282 bank_id_in 0 bank_id_out 4 bank_addr_weights 64 length 16 bias_offset 0 bank_addr_bias 513
+
+LOAD 0000 0000 mode 1 bank_addr 0 bank_id 2 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 25374720
+
+SAVE 0000 0000 mode 1 bank_addr 1024 bank_id 6 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25747456
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 4 bank_addr_out 1284 bank_id_in 0 bank_id_out 4 bank_addr_weights 128 length 16 bias_offset 0 bank_addr_bias 514
+
+LOAD 0000 0100 mode 1 bank_addr 0 bank_id 3 jump_read 512 jump_write 64 length 16 channel 512 reg_id 1 ddr_addr 25432064
+
+SAVE 0000 0100 mode 1 bank_addr 1024 bank_id 7 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25761792
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 4 bank_addr_out 1286 bank_id_in 0 bank_id_out 4 bank_addr_weights 192 length 16 bias_offset 0 bank_addr_bias 515
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 4 bank_addr_out 1288 bank_id_in 0 bank_id_out 4 bank_addr_weights 256 length 16 bias_offset 0 bank_addr_bias 516
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 4 bank_addr_out 1290 bank_id_in 0 bank_id_out 4 bank_addr_weights 320 length 16 bias_offset 0 bank_addr_bias 517
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 4 bank_addr_out 1292 bank_id_in 0 bank_id_out 4 bank_addr_weights 384 length 16 bias_offset 0 bank_addr_bias 518
+
+CONV 0000 0011 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 4 bank_addr_out 1294 bank_id_in 0 bank_id_out 4 bank_addr_weights 448 length 16 bias_offset 0 bank_addr_bias 519
+
+LOAD 0100 0000 mode 1 bank_addr 1024 bank_id 0 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 23916544
+
+SAVE 0100 0000 mode 1 bank_addr 1280 bank_id 4 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25776128
+
+CONV 0001 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 0 bank_addr_out 1536 bank_id_in 0 bank_id_out 4 bank_addr_weights 0 length 16 bias_offset 0 bank_addr_bias 512
+
+LOAD 0000 0000 mode 1 bank_addr 1024 bank_id 1 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 23973888
+
+SAVE 0000 0000 mode 1 bank_addr 1280 bank_id 5 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25790464
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 0 bank_addr_out 1538 bank_id_in 0 bank_id_out 4 bank_addr_weights 64 length 16 bias_offset 0 bank_addr_bias 513
+
+LOAD 0000 0000 mode 1 bank_addr 1024 bank_id 2 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24031232
+
+SAVE 0000 0000 mode 1 bank_addr 1280 bank_id 6 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25804800
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 0 bank_addr_out 1540 bank_id_in 0 bank_id_out 4 bank_addr_weights 128 length 16 bias_offset 0 bank_addr_bias 514
+
+LOAD 0000 0100 mode 1 bank_addr 1024 bank_id 3 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24088576
+
+SAVE 0000 0000 mode 1 bank_addr 1280 bank_id 7 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25819136
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 0 bank_addr_out 1542 bank_id_in 0 bank_id_out 4 bank_addr_weights 192 length 16 bias_offset 0 bank_addr_bias 515
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 0 bank_addr_out 1544 bank_id_in 0 bank_id_out 4 bank_addr_weights 256 length 16 bias_offset 0 bank_addr_bias 516
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 0 bank_addr_out 1546 bank_id_in 0 bank_id_out 4 bank_addr_weights 320 length 16 bias_offset 0 bank_addr_bias 517
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 0 bank_addr_out 1548 bank_id_in 0 bank_id_out 4 bank_addr_weights 384 length 16 bias_offset 0 bank_addr_bias 518
+
+CONV 0000 0011 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 12 pad_bottom 0 bank_addr_out 1550 bank_id_in 0 bank_id_out 4 bank_addr_weights 448 length 16 bias_offset 0 bank_addr_bias 519
+
+LOAD 0100 0000 mode 1 bank_addr 1792 bank_id 0 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24145920
+
+SAVE 0100 0000 mode 1 bank_addr 1536 bank_id 4 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25833472
+
+CONV 0001 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 1792 bank_id_in 0 bank_id_out 4 bank_addr_weights 0 length 12 bias_offset 0 bank_addr_bias 512
+
+LOAD 0000 0000 mode 1 bank_addr 1792 bank_id 1 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24203264
+
+SAVE 0000 0000 mode 1 bank_addr 1536 bank_id 5 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25847808
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 1794 bank_id_in 0 bank_id_out 4 bank_addr_weights 64 length 12 bias_offset 0 bank_addr_bias 513
+
+LOAD 0000 0000 mode 1 bank_addr 1792 bank_id 2 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24260608
+
+SAVE 0000 0000 mode 1 bank_addr 1536 bank_id 6 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25862144
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 1796 bank_id_in 0 bank_id_out 4 bank_addr_weights 128 length 12 bias_offset 0 bank_addr_bias 514
+
+LOAD 0000 0100 mode 1 bank_addr 1792 bank_id 3 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24317952
+
+SAVE 0000 0000 mode 1 bank_addr 1536 bank_id 7 jump_write 128 jump_read 16 length 16 channel 128 reg_id 1 ddr_addr 25876480
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 1798 bank_id_in 0 bank_id_out 4 bank_addr_weights 192 length 12 bias_offset 0 bank_addr_bias 515
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 1800 bank_id_in 0 bank_id_out 4 bank_addr_weights 256 length 12 bias_offset 0 bank_addr_bias 516
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 1802 bank_id_in 0 bank_id_out 4 bank_addr_weights 320 length 12 bias_offset 0 bank_addr_bias 517
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 1804 bank_id_in 0 bank_id_out 4 bank_addr_weights 384 length 12 bias_offset 0 bank_addr_bias 518
+
+CONV 0000 0011 pad_left 0 pad_top 0 bank_addr_in 1024 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 1806 bank_id_in 0 bank_id_out 4 bank_addr_weights 448 length 12 bias_offset 0 bank_addr_bias 519
+
+LOAD 0100 0000 mode 1 bank_addr 512 bank_id 0 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24375296
+
+SAVE 0100 0000 mode 1 bank_addr 1792 bank_id 4 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25497600
+
+CONV 0011 0000 pad_left 0 pad_top 0 bank_addr_in 1792 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 1984 bank_id_in 0 bank_id_out 4 bank_addr_weights 0 length 12 bias_offset 0 bank_addr_bias 512
+
+LOAD 0000 0000 mode 1 bank_addr 512 bank_id 1 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24432640
+
+SAVE 0000 0000 mode 1 bank_addr 1792 bank_id 5 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25511936
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1792 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 1986 bank_id_in 0 bank_id_out 4 bank_addr_weights 64 length 12 bias_offset 0 bank_addr_bias 513
+
+LOAD 0000 0000 mode 1 bank_addr 512 bank_id 2 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24489984
+
+SAVE 0000 0000 mode 1 bank_addr 1792 bank_id 6 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25526272
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1792 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 1988 bank_id_in 0 bank_id_out 4 bank_addr_weights 128 length 12 bias_offset 0 bank_addr_bias 514
+
+LOAD 0000 0100 mode 1 bank_addr 512 bank_id 3 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24547328
+
+SAVE 0000 0000 mode 1 bank_addr 1792 bank_id 7 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25540608
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1792 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 1990 bank_id_in 0 bank_id_out 4 bank_addr_weights 192 length 12 bias_offset 0 bank_addr_bias 515
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1792 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 1992 bank_id_in 0 bank_id_out 4 bank_addr_weights 256 length 12 bias_offset 0 bank_addr_bias 516
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1792 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 1994 bank_id_in 0 bank_id_out 4 bank_addr_weights 320 length 12 bias_offset 0 bank_addr_bias 517
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1792 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 1996 bank_id_in 0 bank_id_out 4 bank_addr_weights 384 length 12 bias_offset 0 bank_addr_bias 518
+
+CONV 0000 0011 pad_left 0 pad_top 0 bank_addr_in 1792 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 1998 bank_id_in 0 bank_id_out 4 bank_addr_weights 448 length 12 bias_offset 0 bank_addr_bias 519
+
+LOAD 0100 0000 mode 1 bank_addr 1280 bank_id 0 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24604672
+
+SAVE 0100 0000 mode 1 bank_addr 1984 bank_id 4 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25554944
+
+CONV 0011 0000 pad_left 0 pad_top 0 bank_addr_in 512 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 128 bank_id_in 0 bank_id_out 4 bank_addr_weights 0 length 12 bias_offset 0 bank_addr_bias 512
+
+LOAD 0000 0000 mode 1 bank_addr 1280 bank_id 1 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24662016
+
+SAVE 0000 0000 mode 1 bank_addr 1984 bank_id 5 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25569280
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 512 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 130 bank_id_in 0 bank_id_out 4 bank_addr_weights 64 length 12 bias_offset 0 bank_addr_bias 513
+
+LOAD 0000 0000 mode 1 bank_addr 1280 bank_id 2 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24719360
+
+SAVE 0000 0000 mode 1 bank_addr 1984 bank_id 6 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25583616
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 512 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 132 bank_id_in 0 bank_id_out 4 bank_addr_weights 128 length 12 bias_offset 0 bank_addr_bias 514
+
+LOAD 0000 0100 mode 1 bank_addr 1280 bank_id 3 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24776704
+
+SAVE 0000 0000 mode 1 bank_addr 1984 bank_id 7 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25597952
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 512 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 134 bank_id_in 0 bank_id_out 4 bank_addr_weights 192 length 12 bias_offset 0 bank_addr_bias 515
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 512 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 136 bank_id_in 0 bank_id_out 4 bank_addr_weights 256 length 12 bias_offset 0 bank_addr_bias 516
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 512 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 138 bank_id_in 0 bank_id_out 4 bank_addr_weights 320 length 12 bias_offset 0 bank_addr_bias 517
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 512 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 140 bank_id_in 0 bank_id_out 4 bank_addr_weights 384 length 12 bias_offset 0 bank_addr_bias 518
+
+CONV 0000 0011 pad_left 0 pad_top 0 bank_addr_in 512 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 15 bank_addr_out 142 bank_id_in 0 bank_id_out 4 bank_addr_weights 448 length 12 bias_offset 0 bank_addr_bias 519
+
+LOAD 0100 0000 mode 1 bank_addr 0 bank_id 0 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24834048
+
+SAVE 0100 0000 mode 1 bank_addr 128 bank_id 4 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25612288
+
+CONV 0001 0000 pad_left 0 pad_top 0 bank_addr_in 1280 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 12 bank_addr_out 320 bank_id_in 0 bank_id_out 4 bank_addr_weights 0 length 12 bias_offset 0 bank_addr_bias 512
+
+LOAD 0000 0000 mode 1 bank_addr 0 bank_id 1 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24891392
+
+SAVE 0000 0000 mode 1 bank_addr 128 bank_id 5 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25626624
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1280 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 12 bank_addr_out 322 bank_id_in 0 bank_id_out 4 bank_addr_weights 64 length 12 bias_offset 0 bank_addr_bias 513
+
+LOAD 0000 0000 mode 1 bank_addr 0 bank_id 2 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 24948736
+
+SAVE 0000 0000 mode 1 bank_addr 128 bank_id 6 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25640960
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1280 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 12 bank_addr_out 324 bank_id_in 0 bank_id_out 4 bank_addr_weights 128 length 12 bias_offset 0 bank_addr_bias 514
+
+LOAD 0000 0100 mode 1 bank_addr 0 bank_id 3 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 25006080
+
+SAVE 0000 0000 mode 1 bank_addr 128 bank_id 7 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25655296
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1280 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 12 bank_addr_out 326 bank_id_in 0 bank_id_out 4 bank_addr_weights 192 length 12 bias_offset 0 bank_addr_bias 515
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1280 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 12 bank_addr_out 328 bank_id_in 0 bank_id_out 4 bank_addr_weights 256 length 12 bias_offset 0 bank_addr_bias 516
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1280 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 12 bank_addr_out 330 bank_id_in 0 bank_id_out 4 bank_addr_weights 320 length 12 bias_offset 0 bank_addr_bias 517
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1280 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 12 bank_addr_out 332 bank_id_in 0 bank_id_out 4 bank_addr_weights 384 length 12 bias_offset 0 bank_addr_bias 518
+
+CONV 0000 0011 pad_left 0 pad_top 0 bank_addr_in 1280 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 12 bank_addr_out 334 bank_id_in 0 bank_id_out 4 bank_addr_weights 448 length 12 bias_offset 0 bank_addr_bias 519
+
+LOAD 0100 0000 mode 1 bank_addr 768 bank_id 0 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 25063424
+
+SAVE 0100 0000 mode 1 bank_addr 320 bank_id 4 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25669632
+
+CONV 0011 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 8 bank_addr_out 512 bank_id_in 0 bank_id_out 4 bank_addr_weights 0 length 12 bias_offset 0 bank_addr_bias 512
+
+LOAD 0000 0000 mode 1 bank_addr 768 bank_id 1 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 25120768
+
+SAVE 0000 0000 mode 1 bank_addr 320 bank_id 5 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25683968
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 8 bank_addr_out 514 bank_id_in 0 bank_id_out 4 bank_addr_weights 64 length 12 bias_offset 0 bank_addr_bias 513
+
+LOAD 0000 0000 mode 1 bank_addr 768 bank_id 2 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 25178112
+
+SAVE 0000 0000 mode 1 bank_addr 320 bank_id 6 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25698304
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 8 bank_addr_out 516 bank_id_in 0 bank_id_out 4 bank_addr_weights 128 length 12 bias_offset 0 bank_addr_bias 514
+
+LOAD 0000 0100 mode 1 bank_addr 768 bank_id 3 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 25235456
+
+SAVE 0000 0000 mode 1 bank_addr 320 bank_id 7 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25712640
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 8 bank_addr_out 518 bank_id_in 0 bank_id_out 4 bank_addr_weights 192 length 12 bias_offset 0 bank_addr_bias 515
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 8 bank_addr_out 520 bank_id_in 0 bank_id_out 4 bank_addr_weights 256 length 12 bias_offset 0 bank_addr_bias 516
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 8 bank_addr_out 522 bank_id_in 0 bank_id_out 4 bank_addr_weights 320 length 12 bias_offset 0 bank_addr_bias 517
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 8 bank_addr_out 524 bank_id_in 0 bank_id_out 4 bank_addr_weights 384 length 12 bias_offset 0 bank_addr_bias 518
+
+CONV 0000 0011 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 8 bank_addr_out 526 bank_id_in 0 bank_id_out 4 bank_addr_weights 448 length 12 bias_offset 0 bank_addr_bias 519
+
+LOAD 0100 0000 mode 1 bank_addr 1536 bank_id 0 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 25292800
+
+SAVE 0100 0000 mode 1 bank_addr 512 bank_id 4 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25726976
+
+CONV 0011 0000 pad_left 0 pad_top 0 bank_addr_in 768 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 4 bank_addr_out 704 bank_id_in 0 bank_id_out 4 bank_addr_weights 0 length 12 bias_offset 0 bank_addr_bias 512
+
+LOAD 0000 0000 mode 1 bank_addr 1536 bank_id 1 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 25350144
+
+SAVE 0000 0000 mode 1 bank_addr 512 bank_id 5 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25741312
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 768 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 4 bank_addr_out 706 bank_id_in 0 bank_id_out 4 bank_addr_weights 64 length 12 bias_offset 0 bank_addr_bias 513
+
+LOAD 0000 0000 mode 1 bank_addr 1536 bank_id 2 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 25407488
+
+SAVE 0000 0000 mode 1 bank_addr 512 bank_id 6 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25755648
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 768 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 4 bank_addr_out 708 bank_id_in 0 bank_id_out 4 bank_addr_weights 128 length 12 bias_offset 0 bank_addr_bias 514
+
+LOAD 0000 0100 mode 1 bank_addr 1536 bank_id 3 jump_read 512 jump_write 64 length 12 channel 512 reg_id 1 ddr_addr 25464832
+
+SAVE 0000 0000 mode 1 bank_addr 512 bank_id 7 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25769984
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 768 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 4 bank_addr_out 710 bank_id_in 0 bank_id_out 4 bank_addr_weights 192 length 12 bias_offset 0 bank_addr_bias 515
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 768 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 4 bank_addr_out 712 bank_id_in 0 bank_id_out 4 bank_addr_weights 256 length 12 bias_offset 0 bank_addr_bias 516
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 768 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 4 bank_addr_out 714 bank_id_in 0 bank_id_out 4 bank_addr_weights 320 length 12 bias_offset 0 bank_addr_bias 517
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 768 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 4 bank_addr_out 716 bank_id_in 0 bank_id_out 4 bank_addr_weights 384 length 12 bias_offset 0 bank_addr_bias 518
+
+CONV 0000 0010 pad_left 0 pad_top 0 bank_addr_in 768 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 4 bank_addr_out 718 bank_id_in 0 bank_id_out 4 bank_addr_weights 448 length 12 bias_offset 0 bank_addr_bias 519
+
+SAVE 0100 0000 mode 1 bank_addr 704 bank_id 4 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25784320
+
+CONV 0011 0000 pad_left 0 pad_top 0 bank_addr_in 1536 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 0 bank_addr_out 896 bank_id_in 0 bank_id_out 4 bank_addr_weights 0 length 12 bias_offset 0 bank_addr_bias 512
+
+SAVE 0000 0000 mode 1 bank_addr 704 bank_id 5 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25798656
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1536 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 0 bank_addr_out 898 bank_id_in 0 bank_id_out 4 bank_addr_weights 64 length 12 bias_offset 0 bank_addr_bias 513
+
+SAVE 0000 0000 mode 1 bank_addr 704 bank_id 6 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25812992
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1536 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 0 bank_addr_out 900 bank_id_in 0 bank_id_out 4 bank_addr_weights 128 length 12 bias_offset 0 bank_addr_bias 514
+
+SAVE 0000 0000 mode 1 bank_addr 704 bank_id 7 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25827328
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1536 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 0 bank_addr_out 902 bank_id_in 0 bank_id_out 4 bank_addr_weights 192 length 12 bias_offset 0 bank_addr_bias 515
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1536 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 0 bank_addr_out 904 bank_id_in 0 bank_id_out 4 bank_addr_weights 256 length 12 bias_offset 0 bank_addr_bias 516
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1536 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 0 bank_addr_out 906 bank_id_in 0 bank_id_out 4 bank_addr_weights 320 length 12 bias_offset 0 bank_addr_bias 517
+
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1536 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 0 bank_addr_out 908 bank_id_in 0 bank_id_out 4 bank_addr_weights 384 length 12 bias_offset 0 bank_addr_bias 518
+
+CONV 0000 0010 pad_left 0 pad_top 0 bank_addr_in 1536 channel_group 64 channel_offset 0 pad_right 0 pad_bottom 0 bank_addr_out 910 bank_id_in 0 bank_id_out 4 bank_addr_weights 448 length 12 bias_offset 0 bank_addr_bias 519
+
+SAVE 0100 0000 mode 1 bank_addr 896 bank_id 4 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25841664
+
+SAVE 0000 0000 mode 1 bank_addr 896 bank_id 5 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25856000
+
+SAVE 0000 0000 mode 1 bank_addr 896 bank_id 6 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25870336
+
+SAVE 0000 0010 mode 1 bank_addr 896 bank_id 7 jump_write 128 jump_read 16 length 12 channel 128 reg_id 1 ddr_addr 25884672
+
+END 0010 0000
+
+DUMPBANK 0000 0000 save_name nullptr save_fmt 4 bank_start 0 bank_num 12
+
+DUMPBANK 0000 0000 save_name nullptr save_fmt 4 bank_start 36 bank_num 16
+
+DUMPDDR 0000 0000 save_name nullptr save_fmt 6 reg_id 0 ddr_start 0 ddr_size 33554432
+
+DUMPDDR 0000 0000 save_name nullptr save_fmt 6 reg_id 1 ddr_start 0 ddr_size 33554432
+
