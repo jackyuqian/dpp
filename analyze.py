@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/local/bin/python3
 import  sys
 import  getopt
 import  math
@@ -150,7 +150,6 @@ def calc_instruction(instr):
                   ddr_efficiency(ops_act) / \
                   min(1, 1.0 * ops_exp / ops_act) + \
                   D_LOAD_INTERVAL
-        print ops_act
     elif instr['NAME'] == 'SAVE':
         ops_exp = instr['LEN'] * instr['CHNL'] * D_CORE_NUM
         ops_act = math.ceil(((instr['LEN'] - 1) * instr['DJMP'] + instr['CHNL']) / 256.0) * 256 * D_CORE_NUM
@@ -160,7 +159,6 @@ def calc_instruction(instr):
                   ddr_efficiency(ops_act) / \
                   min(1, 1.0 * ops_exp / ops_act) + \
                   D_SAVE_INTERVAL
-        print ops_act
 
     elif instr['NAME'] == 'CONV':
         ops_exp = D_CHANNEL_OUT * instr['LEN'] * instr['PP'] * instr['KRNLH'] * instr['KRNLW'] * (D_CHANNEL_IN * instr['CHNLG'] - instr['CHNLO']) * D_CORE_NUM * 2
@@ -371,7 +369,7 @@ def analyse_performance(instructions, cname):
     print ('[%s] LOADA\t%14d\t\t%10d\t\t%8.3f' % (cname, num_loada, ops_loada, time_loada))
     print ('[%s] SAVE\t%14d\t\t%10d\t\t%8.3f'  % (cname, num_save,  ops_save,  time_save))
     print ('[%s] CONV\t%14d\t\t%10d\t\t%8.3f'  % (cname, num_conv,  ops_conv,  time_conv))
-    print '---'
+    print ('---')
     print ('[%s] Runtime:\t%8.3f' % (cname, max(runtime_load, runtime_save, runtime_conv, runtime_misc)))
 #
 # Main Function

@@ -11,6 +11,7 @@ import matplotlib.pyplot as Plot
 #
 def usage():
     print('Please Contact Qian.(yuqian@xilinx.com)')
+    print("./training.py -f filename -t instruction_type")
 
 # Parameters
 #
@@ -95,6 +96,9 @@ for op, value in opts:
     elif op == '-h':
         usage()
         sys.exit()
+if not set(['fname', 'itype']) <=  set(dir()):
+    usage()
+    sys.exit()
 
 net, func_optim, func_loss  = build_net()
 dataset = read_data(fname, itype)
