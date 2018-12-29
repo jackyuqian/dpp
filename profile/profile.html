@@ -12,14 +12,11 @@
     <script type="text/javascript">
         var dom     = document.getElementById("container");
         var myChart = echarts.init(dom);
-        var types   = [
-            {name: 'MISC', color: '#7b9ce1'},
-            {name: 'CONV', color: '#75d874'},
-            {name: 'SAVE', color: '#e0bc78'},
-            {name: 'LOAD', color: '#72b362'}
-        ];
-        //data=mf();
-        
+        var instrs   = {
+            'name' : ['LOAD', 'SAVE', 'CONV', 'MISC'],
+            'color': ['#4cb4e7', '#ffc09f', '#ffee93', '#a3a380']
+        };
+
         function renderItem(params, api) {
             var instr   = api.value(0);
             var start   = api.coord([api.value(1), instr]);
@@ -46,7 +43,7 @@
         option = {
             tooltip: {
                 formatter: function (params) {
-                    return params.marker + params.name + ': ' + params.value[3] + ' ms';
+                    return params.marker + params.name + ': ' + params.value[3];
                 }
             },
             title: {
@@ -86,7 +83,7 @@
                 }
             },
             yAxis: {
-                data: ['MISC', 'CONV', 'SAVE', 'LOAD']
+                data: instrs['name'] 
             },
             series: [{
                 type: 'custom',
