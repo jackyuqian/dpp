@@ -43,7 +43,7 @@
         option = {
             tooltip: {
                 formatter: function (params) {
-                    return params.marker + params.name + ': ' + params.value[3];
+                    return params.marker + params.name + ': ' + params.value[3] + 'us';
                 }
             },
             title: {
@@ -78,7 +78,7 @@
                 scale: true,
                 axisLabel: {
                     formatter: function (val) {
-                        return Math.max(0, val) + ' ms';
+                        return Math.max(0, val) + ' us';
                     }
                 }
             },
