@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <meta charset="utf-8">
+    <title>DPUv3 Profile</title>
+</head>
+   
+<body style="height: 100%">
+    <div id="container" style="height: 100%"></div>
+    <script type="text/javascript" src="echarts.min.js"></script>
+    <script type="text/javascript" src="dprof.js"></script>
+    <script type="text/javascript">
+        var dom     = document.getElementById("container");
+        var myChart = echarts.init(dom);
+        var types   = [
+            {name: 'MISC', color: '#7b9ce1'},
+            {name: 'CONV', color: '#75d874'},
+            {name: 'SAVE', color: '#e0bc78'},
+            {name: 'LOAD', color: '#72b362'}
+        ];
+        //data=mf();
+        
+        function renderItem(params, api) {
+            var instr   = api.value(0);
+            var start   = api.coord([api.value(1), instr]);
+            var end     = api.coord([api.value(2), instr]);
+            var height  = api.size([0, 1])[1] * 0.6;
+            var rect    = echarts.graphic.clipRectByRect({
+                x:      start[0],
+                y:      start[1] - height / 2,
+                width:  end[0] - start[0],
+                height: height
+            }, {
+                x:      params.coordSys.x,
+                y:      params.coordSys.y,
+                width:  params.coordSys.width,
+                height: params.coordSys.height
+            });
+            return rect && {
+                type: 'rect',
+                shape: rect,
+                style: api.style()
+            };
+        }
+        
+        option = {
+            tooltip: {
+                formatter: function (params) {
+                    return params.marker + params.name + ': ' + params.value[3] + ' ms';
+                }
+            },
+            title: {
+                text: 'DPUv3 Profile',
+                left: 'center'
+            },
+            dataZoom: [{
+                type:           'slider',
+                filterMode:     'weakFilter',
+                showDataShadow: false,
+                top:            600,
+                height:         10,
+                borderColor:    'transparent',
+                backgroundColor:'#e2e2e2',
+                handleSize:     20,
+                handleStyle:    {
+                    shadowBlur:     6,
+                    shadowOffsetX:  1,
+                    shadowOffsetY:  2,
+                    shadowColor:    '#aaa'
+                },
+                labelFormatter: ''
+            }, {
+                type:       'inside',
+                filterMode: 'weakFilter'
+            }],
+            grid: {
+                height:     500
+            },
+            xAxis: {
+                min: 0,
+                scale: true,
+                axisLabel: {
+                    formatter: function (val) {
+                        return Math.max(0, val) + ' ms';
+                    }
+                }
+            },
+            yAxis: {
+                data: ['MISC', 'CONV', 'SAVE', 'LOAD']
+            },
+            series: [{
+                type: 'custom',
+                renderItem: renderItem,
+                itemStyle: {
+                    normal: {
+                        opacity: 0.8
+                    }
+                },
+                encode: {
+                    x: [1, 2],
+                    y: 0
+                },
+                data: dprof()
+            }]
+        };;
+        
+        if (option && typeof option === "object") {
+            myChart.setOption(option, true);
+        }
+    </script>
+</body>
+</html>
