@@ -7,7 +7,6 @@ D_DDR_BW        = 19200 # MB/Hz
 D_DDR_EFF       = 0.9
 D_DPU_FREQ      = 350   # MHz
 D_DPU_DATA_W    = 512   # Bits
-D_BIT_OF_DATA   = 8
 D_CORE_NUM      = 4
 D_WINDOW_IN     = 8
 D_CHANNEL_IN    = 16
@@ -19,14 +18,14 @@ D_MISC_PRLL     = 4
 #D_CHANNEL_OUT   = 16
 #D_MISC_PRLL     = 1
 D_INSTRS        = {
-        'LOAD'      : { 'IDX' : 0,  'COLOR' : '#B1C914',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_DPU_DATA_W / 8},
-        'SAVE'      : { 'IDX' : 1,  'COLOR' : '#206FA1',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_DPU_DATA_W / 8},
-        'CONVINIT'  : { 'IDX' : 2,  'COLOR' : '#000000',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : 1},
-        'CONV'      : { 'IDX' : 2,  'COLOR' : '#A6325A',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_CHANNEL_IN * D_CHANNEL_OUT * D_WINDOW_IN * D_CORE_NUM * 2},
-        'ELEWINIT'  : { 'IDX' : 3,  'COLOR' : '#000000',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : 1},
-        'ELEW'      : { 'IDX' : 3,  'COLOR' : '#FF9900',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_CHANNEL_IN * D_MISC_PRLL * D_CORE_NUM / 2},
-        'POOL'      : { 'IDX' : 3,  'COLOR' : '#48A742',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_CHANNEL_IN * D_MISC_PRLL * D_CORE_NUM},
-        'END'       : { 'IDX' : 1,  'COLOR' : '#000000',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : 1}}
+        'LOAD'      : { 'IDX' : 0,  'COLOR' : '#B1C914',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10},
+        'SAVE'      : { 'IDX' : 1,  'COLOR' : '#206FA1',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10},
+        'CONVINIT'  : { 'IDX' : 2,  'COLOR' : '#000000',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10},
+        'CONV'      : { 'IDX' : 2,  'COLOR' : '#A6325A',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10},
+        'ELEWINIT'  : { 'IDX' : 3,  'COLOR' : '#000000',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10},
+        'ELEW'      : { 'IDX' : 3,  'COLOR' : '#FF9900',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10},
+        'POOL'      : { 'IDX' : 3,  'COLOR' : '#48A742',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10},
+        'END'       : { 'IDX' : 1,  'COLOR' : '#000000',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10}}
 
 # Global Variable
 instructions    = []
@@ -57,33 +56,72 @@ def calc_instr():
     convinit_krnlh  = 0
     convinit_krnlw  = 0
     for instr in instructions:
-        if instr['name'] == 'LOAD':
-            instr['ops_exp']    = instr['channel'] * instr['length']
-            instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
+        if instr['name'] == 'LOAD' and instr['mode'] == 0:
+            instr['ops_exp']    = instr['channel'] * instr['length'] * D_CORE_NUM
+            instr['ops_act']    = instr['jump_read'] * instr['length'] * D_CORE_NUM
+            instr['time_exp']   = 1.0 * instr['ops_exp'] / (D_DPU_DATA_W * D_DPU_FREQ / 8)
+            instr['time_act']   = 1.0 * instr['ops_act'] \
+                                   / min(D_DPU_DATA_W * D_DPU_FREQ / 8, D_DDR_BW * D_DDR_EFF) \
+                                   / D_INSTRS[instr['name']]['EFF'] # Load Engine Limit
+            instr['eff']        = instr['time_exp'] / instr['time_act']
+        elif instr['name'] == 'LOAD' and instr['mode'] == 1:
+            instr['ops_exp']    = instr['channel'] * instr['length'] * D_CHANNEL_OUT
+            instr['ops_act']    = instr['jump_read'] * instr['length'] * D_CHANNEL_OUT # Discard output channel isn't an integer number of D_CHANNEL_OUT
+            instr['time_exp']   = 1.0 * instr['ops_exp'] / (D_DPU_DATA_W * D_DPU_FREQ / 8)
+            instr['time_act']   = 1.0 * instr['ops_act'] \
+                                   / min(D_DPU_DATA_W * D_DPU_FREQ / 8, D_DDR_BW * D_DDR_EFF) \
+                                   / D_INSTRS[instr['name']]['EFF'] # Load Engine Limit
+            instr['eff']        = instr['time_exp'] / instr['time_act']
         elif instr['name']  == 'SAVE':
-            instr['ops_exp']    = instr['channel'] * instr['length']
-            instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
+            instr['ops_exp']    = instr['channel'] * instr['length'] * D_CORE_NUM
+            instr['ops_act']    = instr['jump_read'] * instr['length'] * D_CORE_NUM
+            instr['time_exp']   = 1.0 * instr['ops_exp'] / (D_DPU_DATA_W * D_DPU_FREQ / 8)
+            instr['time_act']   = 1.0 * instr['ops_act'] \
+                                   / min(D_DPU_DATA_W * D_DPU_FREQ / 8, D_DDR_BW * D_DDR_EFF) \
+                                   / D_INSTRS[instr['name']]['EFF'] # SAVE Engine Limit
+            instr['eff']        = instr['time_exp'] / instr['time_act']
         elif instr['name']  == 'CONVINIT':
             convinit_vpp        = instr['valid_pixel_parallel']
             convinit_krnlh      = instr['kernel_h']
             convinit_krnlw      = instr['kernel_w']
             instr['ops_exp']    = 0
-            instr['time_exp']   = 1.0 / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
+            instr['ops_act']    = 0
+            instr['time_exp']   = 1.0 / D_DPU_FREQ
+            instr['time_act']   = 1.0 / D_DPU_FREQ
+            instr['eff']        = instr['time_exp'] / instr['time_act']
         elif instr['name']  == 'CONV':
             instr['ops_exp']    = D_CHANNEL_OUT * instr['length'] * convinit_vpp * convinit_krnlw * convinit_krnlh * (D_CHANNEL_IN * instr['channel_group'] - instr['channel_offset']) * D_CORE_NUM * 2
-            instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
+            instr['ops_act']    = D_CHANNEL_OUT * instr['length'] * convinit_vpp * convinit_krnlw * convinit_krnlh * D_CHANNEL_IN * instr['channel_group'] * D_CORE_NUM * 2
+            instr['time_exp']   = 1.0 * instr['ops_exp'] / (D_CHANNEL_IN * D_CHANNEL_OUT * D_WINDOW_IN * D_CORE_NUM * 2) / D_DPU_FREQ
+            instr['time_act']   = 1.0 * instr['ops_act'] / (D_CHANNEL_IN * D_CHANNEL_OUT * D_WINDOW_IN * D_CORE_NUM * 2) / D_DPU_FREQ \
+                                    / D_INSTRS[instr['name']]['EFF'] # CONV Engine Limit
+            instr['eff']        = instr['time_exp'] / instr['time_act']
         elif instr['name']  == 'ELEWINIT':
             instr['ops_exp']    = 0
-            instr['time_exp']   = 1.0 / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
+            instr['ops_act']    = 0
+            instr['time_exp']   = 1.0 / D_DPU_FREQ
+            instr['time_act']   = 1.0 / D_DPU_FREQ
+            instr['eff']        = instr['time_exp'] / instr['time_act']
         elif instr['name']  == 'ELEW':
             instr['ops_exp']    = (instr['num'] - 1) * instr['width'] * instr['channel_group'] * D_CHANNEL_IN * instr['valid_pixel_parallel'] * D_CORE_NUM
-            instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ 
+            instr['ops_act']    = (instr['num'] - 1) * instr['width'] * instr['channel_group'] * D_CHANNEL_IN * instr['valid_pixel_parallel'] * D_CORE_NUM * 2
+            instr['time_exp']   = 1.0 * instr['ops_exp'] / (D_CHANNEL_IN * D_MISC_PRLL * D_CORE_NUM) / D_DPU_FREQ 
+            instr['time_act']   = 1.0 * instr['ops_act'] / (D_CHANNEL_IN * D_MISC_PRLL * D_CORE_NUM) / D_DPU_FREQ \
+                                    / D_INSTRS[instr['name']]['EFF'] # MISC Engine Limit
+            instr['eff']        = instr['time_exp'] / instr['time_act']
         elif instr['name']  == 'POOL':
             instr['ops_exp']    = instr['kernel_w'] * instr['kernel_h'] *  instr['length'] * instr['channel_group'] * D_CHANNEL_IN * instr['valid_pixel_parallel'] * D_CORE_NUM
-            instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ 
+            instr['ops_act']    = instr['kernel_w'] * instr['kernel_h'] *  instr['length'] * instr['channel_group'] * D_CHANNEL_IN * instr['valid_pixel_parallel'] * D_CORE_NUM
+            instr['time_exp']   = 1.0 * instr['ops_exp'] / (D_CHANNEL_IN * D_MISC_PRLL * D_CORE_NUM) / D_DPU_FREQ 
+            instr['time_act']   = 1.0 * instr['ops_act'] / (D_CHANNEL_IN * D_MISC_PRLL * D_CORE_NUM) / D_DPU_FREQ \
+                                    / D_INSTRS[instr['name']]['EFF'] # MISC Engine Limit
+            instr['eff']        = instr['time_exp'] / instr['time_act']
         elif instr['name']  == 'END':
             instr['ops_exp']    = 0
-            instr['time_exp']   = 1.0 / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
+            instr['ops_act']    = 0
+            instr['time_exp']   = 1.0 / D_DPU_FREQ
+            instr['time_act']   = 1.0 / D_DPU_FREQ
+            instr['eff']        = instr['time_exp'] / instr['time_act']
 
 def analyse_perf():
     global instructions
@@ -107,7 +145,7 @@ def analyse_perf():
         else:
             instr['start']  = time_line_tmp + D_INSTRS[instr['name']]['FOH'] / D_DPU_FREQ
 
-        time_line[D_INSTRS[instr['name']]['IDX']]   = instr['start'] + instr['time_exp'] + D_INSTRS[instr['name']]['BOH'] / D_DPU_FREQ
+        time_line[D_INSTRS[instr['name']]['IDX']]   = instr['start'] + instr['time_act'] + D_INSTRS[instr['name']]['BOH'] / D_DPU_FREQ
 
         # Execute Done!
         for idx in range(4):
@@ -119,7 +157,7 @@ def analyse_perf():
             break
         instr_num[D_INSTRS[instr['name']]['IDX']]   = instr_num[D_INSTRS[instr['name']]['IDX']] + 1
         instr_ops[D_INSTRS[instr['name']]['IDX']]   = instr_ops[D_INSTRS[instr['name']]['IDX']] + instr['ops_exp']
-        instr_time[D_INSTRS[instr['name']]['IDX']]  = instr_time[D_INSTRS[instr['name']]['IDX']] + instr['time_exp']
+        instr_time[D_INSTRS[instr['name']]['IDX']]  = instr_time[D_INSTRS[instr['name']]['IDX']] + instr['time_act']
 
     print (dpdby_matrix)
     print ('[%s]\t\tNumber\t\tOperations\t\tTime(us)' % cname)
@@ -139,10 +177,11 @@ def print_prof():
         color   = D_INSTRS[instr['name']]['COLOR']
         name    = instr['name']
         start   = instr['start']
-        time    = instr['time_exp']
+        time    = instr['time_act']
         end     = start + time
         ops     = instr['ops_exp']
-        print("{name:'%s',itemStyle:{normal: {color:'%s'}},value:[%d,%f,%f,%f,%d]}," % (name, color, idx, start, end, time, ops), file=f)
+        eff     = instr['eff']
+        print("{name:'%s',itemStyle:{normal: {color:'%s'}},value:[%d,%f,%f,%f,%d,%f]}," % (name, color, idx, start, end, time, ops, eff), file=f)
     print('];};', file = f)
     f.close()
 
