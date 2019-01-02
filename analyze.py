@@ -12,15 +12,20 @@ D_CORE_NUM      = 4
 D_WINDOW_IN     = 8
 D_CHANNEL_IN    = 16
 D_CHANNEL_OUT   = 16
-D_ELEW_PRLL     = 4
+D_MISC_PRLL     = 4
+#D_CORE_NUM      = 10
+#D_WINDOW_IN     = 4
+#D_CHANNEL_IN    = 8
+#D_CHANNEL_OUT   = 16
+#D_MISC_PRLL     = 1
 D_INSTRS        = {
         'LOAD'      : { 'IDX' : 0,  'COLOR' : '#B1C914',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_DPU_DATA_W / 8},
         'SAVE'      : { 'IDX' : 1,  'COLOR' : '#206FA1',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_DPU_DATA_W / 8},
         'CONVINIT'  : { 'IDX' : 2,  'COLOR' : '#000000',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : 1},
         'CONV'      : { 'IDX' : 2,  'COLOR' : '#A6325A',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_CHANNEL_IN * D_CHANNEL_OUT * D_WINDOW_IN * D_CORE_NUM * 2},
         'ELEWINIT'  : { 'IDX' : 3,  'COLOR' : '#000000',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : 1},
-        'ELEW'      : { 'IDX' : 3,  'COLOR' : '#FF9900',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_CHANNEL_IN * D_ELEW_PRLL * D_CORE_NUM / 2},
-        'POOL'      : { 'IDX' : 3,  'COLOR' : '#48A742',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_CHANNEL_IN * D_ELEW_PRLL * D_CORE_NUM},
+        'ELEW'      : { 'IDX' : 3,  'COLOR' : '#FF9900',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_CHANNEL_IN * D_MISC_PRLL * D_CORE_NUM / 2},
+        'POOL'      : { 'IDX' : 3,  'COLOR' : '#48A742',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_CHANNEL_IN * D_MISC_PRLL * D_CORE_NUM},
         'END'       : { 'IDX' : 1,  'COLOR' : '#000000',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : 1}}
 
 # Global Variable
@@ -62,23 +67,23 @@ def calc_instr():
             convinit_vpp        = instr['valid_pixel_parallel']
             convinit_krnlh      = instr['kernel_h']
             convinit_krnlw      = instr['kernel_w']
-            instr['ops_exp']    = 1
-            instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
+            instr['ops_exp']    = 0
+            instr['time_exp']   = 1.0 / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
         elif instr['name']  == 'CONV':
-            instr['ops_exp']    = D_CHANNEL_OUT * instr['length'] * convinit_vpp * convinit_krnlh * convinit_krnlh * (D_CHANNEL_IN * instr['channel_group'] - instr['channel_offset']) * D_CORE_NUM * 2
+            instr['ops_exp']    = D_CHANNEL_OUT * instr['length'] * convinit_vpp * convinit_krnlw * convinit_krnlh * (D_CHANNEL_IN * instr['channel_group'] - instr['channel_offset']) * D_CORE_NUM * 2
             instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
         elif instr['name']  == 'ELEWINIT':
-            instr['ops_exp']    = 1
-            instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
+            instr['ops_exp']    = 0
+            instr['time_exp']   = 1.0 / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
         elif instr['name']  == 'ELEW':
-            instr['ops_exp']    = (instr['num'] - 1) * instr['width'] * instr['channel_group'] * D_CHANNEL_IN * D_CORE_NUM
+            instr['ops_exp']    = (instr['num'] - 1) * instr['width'] * instr['channel_group'] * D_CHANNEL_IN * instr['valid_pixel_parallel'] * D_CORE_NUM
             instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ 
         elif instr['name']  == 'POOL':
-            instr['ops_exp']    = instr['kernel_w'] * instr['kernel_h'] *  instr['length'] * instr['channel_group'] * D_CHANNEL_IN * D_CORE_NUM
+            instr['ops_exp']    = instr['kernel_w'] * instr['kernel_h'] *  instr['length'] * instr['channel_group'] * D_CHANNEL_IN * instr['valid_pixel_parallel'] * D_CORE_NUM
             instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ 
         elif instr['name']  == 'END':
-            instr['ops_exp']    = 1
-            instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
+            instr['ops_exp']    = 0
+            instr['time_exp']   = 1.0 / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
 
 def analyse_perf():
     global instructions
@@ -90,6 +95,7 @@ def analyse_perf():
     instr_ops       = [0, 0, 0, 0]
     instr_time      = [0.0, 0.0, 0.0, 0.0]
     for instr in instructions:
+        print(instr)
         # Can Execute?
         time_line_tmp   = time_line[D_INSTRS[instr['name']]['IDX']]
         for idx in range(4):
@@ -135,7 +141,8 @@ def print_prof():
         start   = instr['start']
         time    = instr['time_exp']
         end     = start + time
-        print("{name:'%s',itemStyle:{normal: {color:'%s'}},value:[%d,%f,%f,%f]}," % (name, color, idx, start, end, time), file=f)
+        ops     = instr['ops_exp']
+        print("{name:'%s',itemStyle:{normal: {color:'%s'}},value:[%d,%f,%f,%f,%d]}," % (name, color, idx, start, end, time, ops), file=f)
     print('];};', file = f)
     f.close()
 

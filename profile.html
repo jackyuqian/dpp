@@ -38,14 +38,19 @@
         }
         
         option = {
-            tooltip: {
-                formatter: function (params) {
-                    return params.marker + params.name + ': ' + params.value[3] + 'us';
-                }
-            },
             title: {
                 text: 'DPUv3 Profile',
+                subtext: 'By Qian',
                 left: 'center'
+            },
+            tooltip: {
+                formatter: function (params) {
+                    return params.marker + params.name + '<br/>' +
+                        'start: ' + params.value[1] + ' us' + '<br/>' +
+                        'end: ' + params.value[2] + ' us' + '<br/>' +
+                        'duration: ' + params.value[3] + ' us' + '<br/>' +
+                        'ops: ' + params.value[4];
+                }
             },
             xAxis: {
                 scale: true,
@@ -77,8 +82,8 @@
             toolbox: {
                 show : true,
                 orient: 'horizontal',
-                x: 130,
-                y: 60,
+                x: 'center',
+                y: 50,
                 color : ['#1e90ff','#22bb22','#4b0082','#d2691e'],
                 backgroundColor: 'rgba(0,0,0,0)',
                 borderColor: '#ccc',
@@ -126,6 +131,11 @@
         
         if (option && typeof option === "object") {
             myChart.setOption(option, true);
+            myChart.dispatchAction({
+                type: "takeGlobalCursor",
+                key: 'dataZoomSelect',
+                dataZoomSelectActive: true
+            });
         }
     </script>
 </body>
