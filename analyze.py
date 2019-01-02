@@ -14,15 +14,14 @@ D_CHANNEL_IN    = 16
 D_CHANNEL_OUT   = 16
 D_ELEW_PRLL     = 4
 D_INSTRS        = {
-        'LOAD'      : { 'IDX' : 0,  'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_DPU_DATA_W / 8},
-        'SAVE'      : { 'IDX' : 1,  'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_DPU_DATA_W / 8},
-        'CONVINIT'  : { 'IDX' : 2,  'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : 1},
-        'CONV'      : { 'IDX' : 2,  'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_CHANNEL_IN * D_CHANNEL_OUT * D_WINDOW_IN * D_CORE_NUM * 2},
-        'ELEWINIT'  : { 'IDX' : 3,  'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : 1},
-        'ELEW'      : { 'IDX' : 3,  'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_CHANNEL_IN * D_ELEW_PRLL * D_CORE_NUM},
-        'POOLINIT'  : { 'IDX' : 3,  'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : 1},
-        'POOL'      : { 'IDX' : 3,  'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : 1},
-        'END'       : { 'IDX' : 1,  'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : 1}}
+        'LOAD'      : { 'IDX' : 0,  'COLOR' : '#B1C914',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_DPU_DATA_W / 8},
+        'SAVE'      : { 'IDX' : 1,  'COLOR' : '#206FA1',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_DPU_DATA_W / 8},
+        'CONVINIT'  : { 'IDX' : 2,  'COLOR' : '#000000',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : 1},
+        'CONV'      : { 'IDX' : 2,  'COLOR' : '#A6325A',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_CHANNEL_IN * D_CHANNEL_OUT * D_WINDOW_IN * D_CORE_NUM * 2},
+        'ELEWINIT'  : { 'IDX' : 3,  'COLOR' : '#000000',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : 1},
+        'ELEW'      : { 'IDX' : 3,  'COLOR' : '#FF9900',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_CHANNEL_IN * D_ELEW_PRLL * D_CORE_NUM / 2},
+        'POOL'      : { 'IDX' : 3,  'COLOR' : '#48A742',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : D_CHANNEL_IN * D_ELEW_PRLL * D_CORE_NUM},
+        'END'       : { 'IDX' : 1,  'COLOR' : '#000000',    'EFF' : 0.9, 'FOH' : 10, 'BOH' : 10,    'PRLL' : 1}}
 
 # Global Variable
 instructions    = []
@@ -59,7 +58,6 @@ def calc_instr():
         elif instr['name']  == 'SAVE':
             instr['ops_exp']    = instr['channel'] * instr['length']
             instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
-
         elif instr['name']  == 'CONVINIT':
             convinit_vpp        = instr['valid_pixel_parallel']
             convinit_krnlh      = instr['kernel_h']
@@ -73,8 +71,11 @@ def calc_instr():
             instr['ops_exp']    = 2
             instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
         elif instr['name']  == 'ELEW':
-            instr['ops_exp']    = (instr['num'] - 1) * instr['width'] * instr['channel_group'] * D_CHANNEL_IN * D_CORE_NUM * 2
-            instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
+            instr['ops_exp']    = (instr['num'] - 1) * instr['width'] * instr['channel_group'] * D_CHANNEL_IN * D_CORE_NUM
+            instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ 
+        elif instr['name']  == 'POOL':
+            instr['ops_exp']    = instr['kernel_w'] * instr['kernel_h'] *  instr['length'] * instr['channel_group'] * D_CHANNEL_IN * D_CORE_NUM
+            instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ 
         elif instr['name']  == 'END':
             instr['ops_exp']    = 2
             instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
@@ -90,7 +91,7 @@ def analyse_perf():
     instr_time      = [0.0, 0.0, 0.0, 0.0]
     for instr in instructions:
         # Can Execute?
-        time_line_tmp   = 0
+        time_line_tmp   = time_line[D_INSTRS[instr['name']]['IDX']]
         for idx in range(4):
             if instr['dpdon'][idx] == '1':
                 time_line_tmp   = max(time_line_tmp, dpdby_matrix[3-idx][D_INSTRS[instr['name']]['IDX']].pop(0))
@@ -106,10 +107,14 @@ def analyse_perf():
         for idx in range(4):
             if instr['dpdby'][idx] == '1':
                 dpdby_matrix[D_INSTRS[instr['name']]['IDX']][3-idx].append(time_line[D_INSTRS[instr['name']]['IDX']])
+            if instr['name'] == 'END':
+                print("Execute Done!")
+                break
         instr_num[D_INSTRS[instr['name']]['IDX']]   = instr_num[D_INSTRS[instr['name']]['IDX']] + 1
         instr_ops[D_INSTRS[instr['name']]['IDX']]   = instr_ops[D_INSTRS[instr['name']]['IDX']] + instr['ops_exp']
         instr_time[D_INSTRS[instr['name']]['IDX']]  = instr_time[D_INSTRS[instr['name']]['IDX']] + instr['time_exp']
-    
+
+    print (dpdby_matrix)
     print ('[%s]\t\t\tNumber\t\tOperations\t\tTime(us)' % cname)
     print ('[%s] LOAD\t%14d\t\t%10d\t\t%8.3f'  % (cname, instr_num[0], instr_ops[0], instr_time[0]))
     print ('[%s] SAVE\t%14d\t\t%10d\t\t%8.3f'  % (cname, instr_num[1], instr_ops[1], instr_time[1]))
@@ -123,13 +128,13 @@ def print_prof():
     f   = open('dprof.js', 'w')
     print('function dprof() { return [', file = f)
     for instr in instructions:
-        idx = D_INSTRS[instr['name']]['IDX']
+        idx     = D_INSTRS[instr['name']]['IDX']
+        color   = D_INSTRS[instr['name']]['COLOR']
+        name    = instr['name']
         start   = instr['start']
         time    = instr['time_exp']
         end     = start + time
-        print("{name:instrs['name'][%d],itemStyle:{normal: {color:instrs['color'][%d]}},value:[%d,%f,%f,%f]}," % (idx, idx, idx, start, end, time), file=f)
-        #print("{name:instrs['name'][%d],itemStyle:{normal: {color:instrs['color'][%d]}},value:[%d,%d,%d,%d]}," % (idx, idx, idx, int(start*1000), int(end*1000), int(time*1000)), file=f)
-
+        print("{name:'%s',itemStyle:{normal: {color:'%s'}},value:[%d,%f,%f,%f]}," % (name, color, idx, start, end, time), file=f)
     print('];};', file = f)
     f.close()
 

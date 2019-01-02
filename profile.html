@@ -12,10 +12,7 @@
     <script type="text/javascript">
         var dom     = document.getElementById("container");
         var myChart = echarts.init(dom);
-        var instrs   = {
-            'name' : ['LOAD', 'SAVE', 'CONV', 'MISC'],
-            'color': ['#4cb4e7', '#ffc09f', '#ffee93', '#a3a380']
-        };
+        var instrs  = ['LOAD', 'SAVE', 'CONV', 'MISC']
 
         function renderItem(params, api) {
             var instr   = api.value(0);
@@ -83,7 +80,7 @@
                 }
             },
             yAxis: {
-                data: instrs['name'] 
+                data: instrs 
             },
             series: [{
                 type: 'custom',
