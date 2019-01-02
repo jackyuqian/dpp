@@ -47,31 +47,7 @@
                 text: 'DPUv3 Profile',
                 left: 'center'
             },
-            dataZoom: [{
-                type:           'slider',
-                filterMode:     'weakFilter',
-                showDataShadow: false,
-                top:            600,
-                height:         10,
-                borderColor:    'transparent',
-                backgroundColor:'#e2e2e2',
-                handleSize:     20,
-                handleStyle:    {
-                    shadowBlur:     6,
-                    shadowOffsetX:  1,
-                    shadowOffsetY:  2,
-                    shadowColor:    '#aaa'
-                },
-                labelFormatter: ''
-            }, {
-                type:       'inside',
-                filterMode: 'weakFilter'
-            }],
-            grid: {
-                height:     500
-            },
             xAxis: {
-                min: 0,
                 scale: true,
                 axisLabel: {
                     formatter: function (val) {
@@ -80,21 +56,71 @@
                 }
             },
             yAxis: {
-                data: instrs 
+                data:  instrs
+            },
+            grid: {
+                y:      100,
+                height: 500
+            },
+            dataZoom: [{
+                type:           'slider',
+                filterMode:     'weakFilter',
+                showDataShadow: false,
+                top:            630,
+                height:         20,
+                borderColor:    'transparent',
+                backgroundColor:'#e2e2e2'
+            }, {
+                type:       'inside',
+                filterMode: 'weakFilter'
+            }],
+            toolbox: {
+                show : true,
+                orient: 'horizontal',
+                x: 130,
+                y: 60,
+                color : ['#1e90ff','#22bb22','#4b0082','#d2691e'],
+                backgroundColor: 'rgba(0,0,0,0)',
+                borderColor: '#ccc',
+                borderWidth: 0,
+                padding: 5,
+                showTitle: true,
+                feature : {
+                    mark : {
+                        show : true,
+                        lineStyle : {
+                            width : 1,
+                            color : '#1e90ff',
+                            type : 'dashed'
+                        }
+                    },
+                    dataZoom : {
+                        show : true,
+                        yAxisIndex: 'none',
+                        title : {
+                            dataZoom : '区域缩放',
+                            dataZoomReset : '区域缩放-后退'
+                        }
+                    },
+                    restore : {
+                        show : true,
+                        title : '还原',
+                        color : 'black'
+                    },
+                    saveAsImage : {
+                        show : true,
+                        title : '保存为图片',
+                        type : 'jpeg',
+                        lang : ['点击本地保存']
+                    }
+                }
             },
             series: [{
-                type: 'custom',
+                type:       'custom',
                 renderItem: renderItem,
-                itemStyle: {
-                    normal: {
-                        opacity: 0.8
-                    }
-                },
-                encode: {
-                    x: [1, 2],
-                    y: 0
-                },
-                data: dprof()
+                itemStyle:  {normal: {opacity: 0.8}},
+                encode:     {x:[1, 2], y:0},
+                data:       dprof()
             }]
         };;
         
