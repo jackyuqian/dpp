@@ -133,7 +133,7 @@ def analyse_perf():
     instr_ops       = [0, 0, 0, 0]
     instr_time      = [0.0, 0.0, 0.0, 0.0]
     for instr in instructions:
-        print(instr)
+        #print(instr)
         # Can Execute?
         time_line_tmp   = time_line[D_INSTRS[instr['name']]['IDX']]
         for idx in range(4):
@@ -152,14 +152,13 @@ def analyse_perf():
             if instr['dpdby'][idx] == '1':
                 dpdby_matrix[D_INSTRS[instr['name']]['IDX']][3-idx].append(time_line[D_INSTRS[instr['name']]['IDX']])
         
-        if instr['name'] == 'END':
+        if instr['name'] == 'END' and dpdby_matrix == [[[],[],[],[]],[[],[],[],[]],[[],[],[],[]],[[],[],[],[]]]:
             print("Execute Done!")
             break
         instr_num[D_INSTRS[instr['name']]['IDX']]   = instr_num[D_INSTRS[instr['name']]['IDX']] + 1
         instr_ops[D_INSTRS[instr['name']]['IDX']]   = instr_ops[D_INSTRS[instr['name']]['IDX']] + instr['ops_exp']
         instr_time[D_INSTRS[instr['name']]['IDX']]  = instr_time[D_INSTRS[instr['name']]['IDX']] + instr['time_act']
 
-    print (dpdby_matrix)
     print ('[%s]\t\tNumber\t\tOperations\t\tTime(us)' % cname)
     print ('[%s] LOAD\t%14d\t\t%10d\t\t%8.3f'  % (cname, instr_num[0], instr_ops[0], instr_time[0]))
     print ('[%s] SAVE\t%14d\t\t%10d\t\t%8.3f'  % (cname, instr_num[1], instr_ops[1], instr_time[1]))
