@@ -62,13 +62,13 @@ def calc_instr():
             convinit_vpp        = instr['valid_pixel_parallel']
             convinit_krnlh      = instr['kernel_h']
             convinit_krnlw      = instr['kernel_w']
-            instr['ops_exp']    = 2
+            instr['ops_exp']    = 1
             instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
         elif instr['name']  == 'CONV':
             instr['ops_exp']    = D_CHANNEL_OUT * instr['length'] * convinit_vpp * convinit_krnlh * convinit_krnlh * (D_CHANNEL_IN * instr['channel_group'] - instr['channel_offset']) * D_CORE_NUM * 2
             instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
         elif instr['name']  == 'ELEWINIT':
-            instr['ops_exp']    = 2
+            instr['ops_exp']    = 1
             instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
         elif instr['name']  == 'ELEW':
             instr['ops_exp']    = (instr['num'] - 1) * instr['width'] * instr['channel_group'] * D_CHANNEL_IN * D_CORE_NUM
@@ -77,7 +77,7 @@ def calc_instr():
             instr['ops_exp']    = instr['kernel_w'] * instr['kernel_h'] *  instr['length'] * instr['channel_group'] * D_CHANNEL_IN * D_CORE_NUM
             instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ 
         elif instr['name']  == 'END':
-            instr['ops_exp']    = 2
+            instr['ops_exp']    = 1
             instr['time_exp']   = 1.0 * instr['ops_exp'] / D_INSTRS[instr['name']]['PRLL'] / D_DPU_FREQ
 
 def analyse_perf():
@@ -107,15 +107,16 @@ def analyse_perf():
         for idx in range(4):
             if instr['dpdby'][idx] == '1':
                 dpdby_matrix[D_INSTRS[instr['name']]['IDX']][3-idx].append(time_line[D_INSTRS[instr['name']]['IDX']])
-            if instr['name'] == 'END':
-                print("Execute Done!")
-                break
+        
+        if instr['name'] == 'END':
+            print("Execute Done!")
+            break
         instr_num[D_INSTRS[instr['name']]['IDX']]   = instr_num[D_INSTRS[instr['name']]['IDX']] + 1
         instr_ops[D_INSTRS[instr['name']]['IDX']]   = instr_ops[D_INSTRS[instr['name']]['IDX']] + instr['ops_exp']
         instr_time[D_INSTRS[instr['name']]['IDX']]  = instr_time[D_INSTRS[instr['name']]['IDX']] + instr['time_exp']
 
     print (dpdby_matrix)
-    print ('[%s]\t\t\tNumber\t\tOperations\t\tTime(us)' % cname)
+    print ('[%s]\t\tNumber\t\tOperations\t\tTime(us)' % cname)
     print ('[%s] LOAD\t%14d\t\t%10d\t\t%8.3f'  % (cname, instr_num[0], instr_ops[0], instr_time[0]))
     print ('[%s] SAVE\t%14d\t\t%10d\t\t%8.3f'  % (cname, instr_num[1], instr_ops[1], instr_time[1]))
     print ('[%s] CONV\t%14d\t\t%10d\t\t%8.3f'  % (cname, instr_num[2], instr_ops[2], instr_time[2]))
