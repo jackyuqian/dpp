@@ -5,7 +5,7 @@ import  math
 # Global Definition
 D_DDR_BW        = 19200 # MB/Hz
 D_DDR_EFF       = 0.9
-D_DPU_FREQ      = 350   # MHz
+D_DPU_FREQ      = 300   # MHz
 D_DPU_DATA_W    = 512   # Bits
 D_CORE_NUM      = 4
 D_WINDOW_IN     = 8
