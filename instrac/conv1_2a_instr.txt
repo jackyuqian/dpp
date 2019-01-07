@@ -1,0 +1,627 @@
+LOAD 0000 0000 mode 0 bank_addr 224 bank_id 1 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 0
+CONVINIT 0000 0000 act_type 1 shift_cut 9 jump_read 1 stride_out 1 jump_read_endl 224 stride_h 2 kernel_h 7 valid_pixel_parallel 8 stride_offset_in 0 jump_write 4 stride_w 2 kernel_w 7 stride_offset_out 0 jump_write_endl 1
+LOAD 0000 0000 mode 0 bank_addr 0 bank_id 2 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 3584
+LOAD 0000 0000 mode 0 bank_addr 224 bank_id 2 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 7168
+LOAD 0000 0000 mode 0 bank_addr 0 bank_id 3 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 10752
+LOAD 0000 0000 mode 0 bank_addr 224 bank_id 3 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 14336
+LOAD 0000 0000 mode 0 bank_addr 0 bank_id 4 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 17920
+LOAD 0000 0000 mode 0 bank_addr 224 bank_id 4 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 21504
+LOAD 0000 0000 mode 0 bank_addr 0 bank_id 5 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 25088
+LOAD 0000 0000 mode 0 bank_addr 224 bank_id 5 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 28672
+LOAD 0000 0000 mode 0 bank_addr 0 bank_id 6 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 32256
+LOAD 0000 0000 mode 0 bank_addr 224 bank_id 6 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 35840
+LOAD 0000 0000 mode 0 bank_addr 0 bank_id 7 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 39424
+LOAD 0000 0000 mode 0 bank_addr 224 bank_id 7 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 43008
+LOAD 0000 0000 mode 0 bank_addr 448 bank_id 0 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 46592
+LOAD 0000 0000 mode 0 bank_addr 672 bank_id 0 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 50176
+LOAD 0000 0000 mode 0 bank_addr 448 bank_id 1 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 53760
+LOAD 0000 0000 mode 0 bank_addr 672 bank_id 1 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 57344
+LOAD 0000 0100 mode 0 bank_addr 448 bank_id 2 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 60928
+CONV 0001 0000 pad_left 3 pad_top 3 bank_addr_in 4093 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 0 bank_id_in 0 bank_id_out 24 bank_addr_weights 0 length 112 bias_offset 0 bank_addr_bias 196
+CONV 0000 0000 pad_left 3 pad_top 3 bank_addr_in 4093 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 1 bank_id_in 0 bank_id_out 24 bank_addr_weights 49 length 112 bias_offset 0 bank_addr_bias 197
+CONV 0000 0000 pad_left 3 pad_top 3 bank_addr_in 4093 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 2 bank_id_in 0 bank_id_out 24 bank_addr_weights 98 length 112 bias_offset 0 bank_addr_bias 198
+CONV 0000 0000 pad_left 3 pad_top 3 bank_addr_in 4093 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 3 bank_id_in 0 bank_id_out 24 bank_addr_weights 147 length 112 bias_offset 0 bank_addr_bias 199
+LOAD 0000 0000 mode 0 bank_addr 672 bank_id 2 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 64512
+LOAD 0000 0000 mode 0 bank_addr 448 bank_id 3 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 68096
+LOAD 0000 0000 mode 0 bank_addr 672 bank_id 3 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 71680
+LOAD 0000 0000 mode 0 bank_addr 448 bank_id 4 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 75264
+LOAD 0000 0000 mode 0 bank_addr 672 bank_id 4 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 78848
+LOAD 0000 0000 mode 0 bank_addr 448 bank_id 5 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 82432
+LOAD 0000 0000 mode 0 bank_addr 672 bank_id 5 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 86016
+LOAD 0000 0000 mode 0 bank_addr 448 bank_id 6 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 89600
+LOAD 0000 0000 mode 0 bank_addr 672 bank_id 6 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 93184
+LOAD 0000 0000 mode 0 bank_addr 448 bank_id 7 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 96768
+LOAD 0000 0000 mode 0 bank_addr 672 bank_id 7 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 100352
+LOAD 0000 0000 mode 0 bank_addr 896 bank_id 0 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 103936
+LOAD 0000 0000 mode 0 bank_addr 1120 bank_id 0 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 107520
+LOAD 0000 0000 mode 0 bank_addr 896 bank_id 1 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 111104
+LOAD 0000 0000 mode 0 bank_addr 1120 bank_id 1 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 114688
+LOAD 0000 0100 mode 0 bank_addr 896 bank_id 2 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 118272
+CONV 0001 0000 pad_left 3 pad_top 0 bank_addr_in 445 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 448 bank_id_in 0 bank_id_out 24 bank_addr_weights 0 length 112 bias_offset 0 bank_addr_bias 196
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 445 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 449 bank_id_in 0 bank_id_out 24 bank_addr_weights 49 length 112 bias_offset 0 bank_addr_bias 197
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 445 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 450 bank_id_in 0 bank_id_out 24 bank_addr_weights 98 length 112 bias_offset 0 bank_addr_bias 198
+CONV 0000 1000 pad_left 3 pad_top 0 bank_addr_in 445 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 451 bank_id_in 0 bank_id_out 24 bank_addr_weights 147 length 112 bias_offset 0 bank_addr_bias 199
+POOL 0100 0000 pad_top 0 pad_bottom 0 pad_left 0 pad_right 1 shift_avg 0 bank_addr_in 0 bank_addr_out 0 length 56 jump_read_endl 448 jump_write_endl 224 stride_w 2 stride_h 2 valid_pixel_parallel 4 kernel_w 3 select_avg 0 channel_group 4 bank_id_in 24 bank_id_out 16 pool_type 0 kernel_h 3
+LOAD 0000 0000 mode 0 bank_addr 1120 bank_id 2 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 121856
+LOAD 0000 0000 mode 0 bank_addr 896 bank_id 3 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 125440
+LOAD 0000 0000 mode 0 bank_addr 1120 bank_id 3 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 129024
+LOAD 0000 0000 mode 0 bank_addr 896 bank_id 4 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 132608
+LOAD 0000 0000 mode 0 bank_addr 1120 bank_id 4 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 136192
+LOAD 0000 0000 mode 0 bank_addr 896 bank_id 5 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 139776
+LOAD 0000 0000 mode 0 bank_addr 1120 bank_id 5 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 143360
+LOAD 0000 0000 mode 0 bank_addr 896 bank_id 6 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 146944
+LOAD 0000 0000 mode 0 bank_addr 1120 bank_id 6 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 150528
+LOAD 0000 0000 mode 0 bank_addr 896 bank_id 7 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 154112
+LOAD 0000 0000 mode 0 bank_addr 1120 bank_id 7 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 157696
+LOAD 0000 0000 mode 0 bank_addr 1344 bank_id 0 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 161280
+LOAD 0000 0000 mode 0 bank_addr 1568 bank_id 0 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 164864
+LOAD 0000 0000 mode 0 bank_addr 1344 bank_id 1 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 168448
+LOAD 0000 0000 mode 0 bank_addr 1568 bank_id 1 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 172032
+LOAD 0000 0100 mode 0 bank_addr 1344 bank_id 2 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 175616
+CONV 0001 0000 pad_left 3 pad_top 0 bank_addr_in 893 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 896 bank_id_in 0 bank_id_out 24 bank_addr_weights 0 length 112 bias_offset 0 bank_addr_bias 196
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 893 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 897 bank_id_in 0 bank_id_out 24 bank_addr_weights 49 length 112 bias_offset 0 bank_addr_bias 197
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 893 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 898 bank_id_in 0 bank_id_out 24 bank_addr_weights 98 length 112 bias_offset 0 bank_addr_bias 198
+CONV 0000 1000 pad_left 3 pad_top 0 bank_addr_in 893 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 899 bank_id_in 0 bank_id_out 24 bank_addr_weights 147 length 112 bias_offset 0 bank_addr_bias 199
+POOL 0100 0100 pad_top 0 pad_bottom 0 pad_left 0 pad_right 1 shift_avg 0 bank_addr_in 448 bank_addr_out 0 length 56 jump_read_endl 448 jump_write_endl 224 stride_w 2 stride_h 2 valid_pixel_parallel 4 kernel_w 3 select_avg 0 channel_group 4 bank_id_in 24 bank_id_out 20 pool_type 0 kernel_h 3
+LOAD 0000 0000 mode 0 bank_addr 1568 bank_id 2 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 179200
+LOAD 0000 0000 mode 0 bank_addr 1344 bank_id 3 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 182784
+LOAD 0000 0000 mode 0 bank_addr 1568 bank_id 3 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 186368
+LOAD 0000 0000 mode 0 bank_addr 1344 bank_id 4 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 189952
+LOAD 0000 0000 mode 0 bank_addr 1568 bank_id 4 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 193536
+LOAD 0000 0000 mode 0 bank_addr 1344 bank_id 5 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 197120
+LOAD 0000 0000 mode 0 bank_addr 1568 bank_id 5 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 200704
+LOAD 0000 0000 mode 0 bank_addr 1344 bank_id 6 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 204288
+LOAD 0000 0000 mode 0 bank_addr 1568 bank_id 6 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 207872
+LOAD 0000 0000 mode 0 bank_addr 1344 bank_id 7 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 211456
+LOAD 0000 0000 mode 0 bank_addr 1568 bank_id 7 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 215040
+LOAD 0000 0000 mode 0 bank_addr 1792 bank_id 0 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 218624
+LOAD 0000 0000 mode 0 bank_addr 2016 bank_id 0 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 222208
+LOAD 0000 0000 mode 0 bank_addr 1792 bank_id 1 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 225792
+LOAD 0000 0000 mode 0 bank_addr 2016 bank_id 1 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 229376
+LOAD 0000 0100 mode 0 bank_addr 1792 bank_id 2 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 232960
+CONV 0001 0000 pad_left 3 pad_top 0 bank_addr_in 1341 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 1344 bank_id_in 0 bank_id_out 24 bank_addr_weights 0 length 112 bias_offset 0 bank_addr_bias 196
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 1341 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 1345 bank_id_in 0 bank_id_out 24 bank_addr_weights 49 length 112 bias_offset 0 bank_addr_bias 197
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 1341 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 1346 bank_id_in 0 bank_id_out 24 bank_addr_weights 98 length 112 bias_offset 0 bank_addr_bias 198
+CONV 0000 1000 pad_left 3 pad_top 0 bank_addr_in 1341 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 1347 bank_id_in 0 bank_id_out 24 bank_addr_weights 147 length 112 bias_offset 0 bank_addr_bias 199
+POOL 0100 0000 pad_top 0 pad_bottom 0 pad_left 0 pad_right 1 shift_avg 0 bank_addr_in 896 bank_addr_out 224 length 56 jump_read_endl 448 jump_write_endl 224 stride_w 2 stride_h 2 valid_pixel_parallel 4 kernel_w 3 select_avg 0 channel_group 4 bank_id_in 24 bank_id_out 16 pool_type 0 kernel_h 3
+LOAD 0000 0000 mode 0 bank_addr 2016 bank_id 2 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 236544
+LOAD 0000 0000 mode 0 bank_addr 1792 bank_id 3 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 240128
+LOAD 0000 0000 mode 0 bank_addr 2016 bank_id 3 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 243712
+LOAD 0000 0000 mode 0 bank_addr 1792 bank_id 4 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 247296
+LOAD 0000 0000 mode 0 bank_addr 2016 bank_id 4 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 250880
+LOAD 0000 0000 mode 0 bank_addr 1792 bank_id 5 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 254464
+LOAD 0000 0000 mode 0 bank_addr 2016 bank_id 5 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 258048
+LOAD 0000 0000 mode 0 bank_addr 1792 bank_id 6 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 261632
+LOAD 0000 0000 mode 0 bank_addr 2016 bank_id 6 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 265216
+LOAD 0000 0000 mode 0 bank_addr 1792 bank_id 7 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 268800
+LOAD 0000 0000 mode 0 bank_addr 2016 bank_id 7 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 272384
+LOAD 0000 0000 mode 0 bank_addr 2240 bank_id 0 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 275968
+LOAD 0000 0000 mode 0 bank_addr 2464 bank_id 0 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 279552
+LOAD 0000 0000 mode 0 bank_addr 2240 bank_id 1 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 283136
+LOAD 0000 0000 mode 0 bank_addr 2464 bank_id 1 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 286720
+LOAD 0000 0100 mode 0 bank_addr 2240 bank_id 2 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 290304
+CONV 0001 0000 pad_left 3 pad_top 0 bank_addr_in 1789 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 1792 bank_id_in 0 bank_id_out 24 bank_addr_weights 0 length 112 bias_offset 0 bank_addr_bias 196
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 1789 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 1793 bank_id_in 0 bank_id_out 24 bank_addr_weights 49 length 112 bias_offset 0 bank_addr_bias 197
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 1789 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 1794 bank_id_in 0 bank_id_out 24 bank_addr_weights 98 length 112 bias_offset 0 bank_addr_bias 198
+CONV 0000 1000 pad_left 3 pad_top 0 bank_addr_in 1789 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 1795 bank_id_in 0 bank_id_out 24 bank_addr_weights 147 length 112 bias_offset 0 bank_addr_bias 199
+POOL 0100 0100 pad_top 0 pad_bottom 0 pad_left 0 pad_right 1 shift_avg 0 bank_addr_in 1344 bank_addr_out 224 length 56 jump_read_endl 448 jump_write_endl 224 stride_w 2 stride_h 2 valid_pixel_parallel 4 kernel_w 3 select_avg 0 channel_group 4 bank_id_in 24 bank_id_out 20 pool_type 0 kernel_h 3
+LOAD 0000 0000 mode 0 bank_addr 2464 bank_id 2 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 293888
+LOAD 0000 0000 mode 0 bank_addr 2240 bank_id 3 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 297472
+LOAD 0000 0000 mode 0 bank_addr 2464 bank_id 3 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 301056
+LOAD 0000 0000 mode 0 bank_addr 2240 bank_id 4 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 304640
+LOAD 0000 0000 mode 0 bank_addr 2464 bank_id 4 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 308224
+LOAD 0000 0000 mode 0 bank_addr 2240 bank_id 5 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 311808
+LOAD 0000 0000 mode 0 bank_addr 2464 bank_id 5 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 315392
+LOAD 0000 0000 mode 0 bank_addr 2240 bank_id 6 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 318976
+LOAD 0000 0000 mode 0 bank_addr 2464 bank_id 6 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 322560
+LOAD 0000 0000 mode 0 bank_addr 2240 bank_id 7 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 326144
+LOAD 0000 0000 mode 0 bank_addr 2464 bank_id 7 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 329728
+LOAD 0000 0000 mode 0 bank_addr 2688 bank_id 0 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 333312
+LOAD 0000 0000 mode 0 bank_addr 2912 bank_id 0 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 336896
+LOAD 0000 0000 mode 0 bank_addr 2688 bank_id 1 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 340480
+LOAD 0000 0000 mode 0 bank_addr 2912 bank_id 1 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 344064
+LOAD 0000 0100 mode 0 bank_addr 2688 bank_id 2 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 347648
+CONV 0001 0000 pad_left 3 pad_top 0 bank_addr_in 2237 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 2240 bank_id_in 0 bank_id_out 24 bank_addr_weights 0 length 112 bias_offset 0 bank_addr_bias 196
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 2237 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 2241 bank_id_in 0 bank_id_out 24 bank_addr_weights 49 length 112 bias_offset 0 bank_addr_bias 197
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 2237 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 2242 bank_id_in 0 bank_id_out 24 bank_addr_weights 98 length 112 bias_offset 0 bank_addr_bias 198
+CONV 0000 1000 pad_left 3 pad_top 0 bank_addr_in 2237 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 2243 bank_id_in 0 bank_id_out 24 bank_addr_weights 147 length 112 bias_offset 0 bank_addr_bias 199
+POOL 0100 0000 pad_top 0 pad_bottom 0 pad_left 0 pad_right 1 shift_avg 0 bank_addr_in 1792 bank_addr_out 448 length 56 jump_read_endl 448 jump_write_endl 224 stride_w 2 stride_h 2 valid_pixel_parallel 4 kernel_w 3 select_avg 0 channel_group 4 bank_id_in 24 bank_id_out 16 pool_type 0 kernel_h 3
+LOAD 0000 0000 mode 0 bank_addr 2912 bank_id 2 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 351232
+LOAD 0000 0000 mode 0 bank_addr 2688 bank_id 3 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 354816
+LOAD 0000 0000 mode 0 bank_addr 2912 bank_id 3 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 358400
+LOAD 0000 0000 mode 0 bank_addr 2688 bank_id 4 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 361984
+LOAD 0000 0000 mode 0 bank_addr 2912 bank_id 4 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 365568
+LOAD 0000 0000 mode 0 bank_addr 2688 bank_id 5 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 369152
+LOAD 0000 0000 mode 0 bank_addr 2912 bank_id 5 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 372736
+LOAD 0000 0000 mode 0 bank_addr 2688 bank_id 6 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 376320
+LOAD 0000 0000 mode 0 bank_addr 2912 bank_id 6 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 379904
+LOAD 0000 0000 mode 0 bank_addr 2688 bank_id 7 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 383488
+LOAD 0000 0000 mode 0 bank_addr 2912 bank_id 7 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 387072
+LOAD 0000 0000 mode 0 bank_addr 3136 bank_id 0 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 390656
+LOAD 0000 0000 mode 0 bank_addr 3360 bank_id 0 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 394240
+LOAD 0000 0000 mode 0 bank_addr 3136 bank_id 1 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 397824
+LOAD 0000 0000 mode 0 bank_addr 3360 bank_id 1 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 401408
+LOAD 0000 0100 mode 0 bank_addr 3136 bank_id 2 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 404992
+CONV 0001 0000 pad_left 3 pad_top 0 bank_addr_in 2685 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 2688 bank_id_in 0 bank_id_out 24 bank_addr_weights 0 length 112 bias_offset 0 bank_addr_bias 196
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 2685 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 2689 bank_id_in 0 bank_id_out 24 bank_addr_weights 49 length 112 bias_offset 0 bank_addr_bias 197
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 2685 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 2690 bank_id_in 0 bank_id_out 24 bank_addr_weights 98 length 112 bias_offset 0 bank_addr_bias 198
+CONV 0000 1000 pad_left 3 pad_top 0 bank_addr_in 2685 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 2691 bank_id_in 0 bank_id_out 24 bank_addr_weights 147 length 112 bias_offset 0 bank_addr_bias 199
+POOL 0100 0100 pad_top 0 pad_bottom 0 pad_left 0 pad_right 1 shift_avg 0 bank_addr_in 2240 bank_addr_out 448 length 56 jump_read_endl 448 jump_write_endl 224 stride_w 2 stride_h 2 valid_pixel_parallel 4 kernel_w 3 select_avg 0 channel_group 4 bank_id_in 24 bank_id_out 20 pool_type 0 kernel_h 3
+LOAD 0000 0000 mode 0 bank_addr 0 bank_id 8 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 390656
+LOAD 0000 0000 mode 0 bank_addr 224 bank_id 8 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 394240
+LOAD 0000 0000 mode 0 bank_addr 0 bank_id 9 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 397824
+LOAD 0000 0000 mode 0 bank_addr 224 bank_id 9 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 401408
+LOAD 0000 0000 mode 0 bank_addr 0 bank_id 10 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 404992
+LOAD 0000 0000 mode 0 bank_addr 224 bank_id 10 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 408576
+LOAD 0000 0000 mode 0 bank_addr 0 bank_id 11 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 412160
+LOAD 0000 0000 mode 0 bank_addr 224 bank_id 11 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 415744
+LOAD 0000 0000 mode 0 bank_addr 0 bank_id 12 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 419328
+LOAD 0000 0000 mode 0 bank_addr 224 bank_id 12 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 422912
+LOAD 0000 0000 mode 0 bank_addr 0 bank_id 13 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 426496
+LOAD 0000 0000 mode 0 bank_addr 224 bank_id 13 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 430080
+LOAD 0000 0000 mode 0 bank_addr 0 bank_id 14 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 433664
+LOAD 0000 0000 mode 0 bank_addr 224 bank_id 14 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 437248
+LOAD 0000 0000 mode 0 bank_addr 0 bank_id 15 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 440832
+LOAD 0000 0000 mode 0 bank_addr 224 bank_id 15 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 444416
+LOAD 0000 0000 mode 0 bank_addr 448 bank_id 8 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 448000
+LOAD 0000 0000 mode 0 bank_addr 672 bank_id 8 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 451584
+LOAD 0000 0000 mode 0 bank_addr 448 bank_id 9 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 455168
+LOAD 0000 0000 mode 0 bank_addr 672 bank_id 9 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 458752
+LOAD 0000 0100 mode 0 bank_addr 448 bank_id 10 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 462336
+CONV 0001 0000 pad_left 3 pad_top 0 bank_addr_in -3 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 3136 bank_id_in 8 bank_id_out 24 bank_addr_weights 0 length 112 bias_offset 0 bank_addr_bias 196
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in -3 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 3137 bank_id_in 8 bank_id_out 24 bank_addr_weights 49 length 112 bias_offset 0 bank_addr_bias 197
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in -3 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 3138 bank_id_in 8 bank_id_out 24 bank_addr_weights 98 length 112 bias_offset 0 bank_addr_bias 198
+CONV 0000 1000 pad_left 3 pad_top 0 bank_addr_in -3 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 3139 bank_id_in 8 bank_id_out 24 bank_addr_weights 147 length 112 bias_offset 0 bank_addr_bias 199
+POOL 0100 0000 pad_top 0 pad_bottom 0 pad_left 0 pad_right 1 shift_avg 0 bank_addr_in 2688 bank_addr_out 672 length 56 jump_read_endl 448 jump_write_endl 224 stride_w 2 stride_h 2 valid_pixel_parallel 4 kernel_w 3 select_avg 0 channel_group 4 bank_id_in 24 bank_id_out 16 pool_type 0 kernel_h 3
+LOAD 0000 0000 mode 0 bank_addr 672 bank_id 10 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 465920
+LOAD 0000 0000 mode 0 bank_addr 448 bank_id 11 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 469504
+LOAD 0000 0000 mode 0 bank_addr 672 bank_id 11 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 473088
+LOAD 0000 0000 mode 0 bank_addr 448 bank_id 12 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 476672
+LOAD 0000 0000 mode 0 bank_addr 672 bank_id 12 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 480256
+LOAD 0000 0000 mode 0 bank_addr 448 bank_id 13 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 483840
+LOAD 0000 0000 mode 0 bank_addr 672 bank_id 13 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 487424
+LOAD 0000 0000 mode 0 bank_addr 448 bank_id 14 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 491008
+LOAD 0000 0000 mode 0 bank_addr 672 bank_id 14 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 494592
+LOAD 0000 0000 mode 0 bank_addr 448 bank_id 15 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 498176
+LOAD 0000 0000 mode 0 bank_addr 672 bank_id 15 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 501760
+LOAD 0000 0000 mode 0 bank_addr 896 bank_id 8 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 505344
+LOAD 0000 0000 mode 0 bank_addr 1120 bank_id 8 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 508928
+LOAD 0000 0000 mode 0 bank_addr 896 bank_id 9 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 512512
+LOAD 0000 0000 mode 0 bank_addr 1120 bank_id 9 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 516096
+LOAD 0000 0100 mode 0 bank_addr 896 bank_id 10 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 519680
+CONV 0001 0000 pad_left 3 pad_top 0 bank_addr_in 445 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 3584 bank_id_in 8 bank_id_out 24 bank_addr_weights 0 length 112 bias_offset 0 bank_addr_bias 196
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 445 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 3585 bank_id_in 8 bank_id_out 24 bank_addr_weights 49 length 112 bias_offset 0 bank_addr_bias 197
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 445 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 3586 bank_id_in 8 bank_id_out 24 bank_addr_weights 98 length 112 bias_offset 0 bank_addr_bias 198
+CONV 0000 1000 pad_left 3 pad_top 0 bank_addr_in 445 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 3587 bank_id_in 8 bank_id_out 24 bank_addr_weights 147 length 112 bias_offset 0 bank_addr_bias 199
+POOL 0100 0100 pad_top 0 pad_bottom 0 pad_left 0 pad_right 1 shift_avg 0 bank_addr_in 3136 bank_addr_out 672 length 56 jump_read_endl 448 jump_write_endl 224 stride_w 2 stride_h 2 valid_pixel_parallel 4 kernel_w 3 select_avg 0 channel_group 4 bank_id_in 24 bank_id_out 20 pool_type 0 kernel_h 3
+LOAD 0000 0000 mode 0 bank_addr 1120 bank_id 10 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 523264
+LOAD 0000 0000 mode 0 bank_addr 896 bank_id 11 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 526848
+LOAD 0000 0000 mode 0 bank_addr 1120 bank_id 11 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 530432
+LOAD 0000 0000 mode 0 bank_addr 896 bank_id 12 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 534016
+LOAD 0000 0000 mode 0 bank_addr 1120 bank_id 12 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 537600
+LOAD 0000 0000 mode 0 bank_addr 896 bank_id 13 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 541184
+LOAD 0000 0000 mode 0 bank_addr 1120 bank_id 13 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 544768
+LOAD 0000 0000 mode 0 bank_addr 896 bank_id 14 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 548352
+LOAD 0000 0000 mode 0 bank_addr 1120 bank_id 14 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 551936
+LOAD 0000 0000 mode 0 bank_addr 896 bank_id 15 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 555520
+LOAD 0000 0000 mode 0 bank_addr 1120 bank_id 15 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 559104
+LOAD 0000 0000 mode 0 bank_addr 1344 bank_id 8 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 562688
+LOAD 0000 0000 mode 0 bank_addr 1568 bank_id 8 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 566272
+LOAD 0000 0000 mode 0 bank_addr 1344 bank_id 9 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 569856
+LOAD 0000 0000 mode 0 bank_addr 1568 bank_id 9 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 573440
+LOAD 0000 0100 mode 0 bank_addr 1344 bank_id 10 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 577024
+CONV 0001 0000 pad_left 3 pad_top 0 bank_addr_in 893 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 4032 bank_id_in 8 bank_id_out 24 bank_addr_weights 0 length 112 bias_offset 0 bank_addr_bias 196
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 893 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 4033 bank_id_in 8 bank_id_out 24 bank_addr_weights 49 length 112 bias_offset 0 bank_addr_bias 197
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 893 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 4034 bank_id_in 8 bank_id_out 24 bank_addr_weights 98 length 112 bias_offset 0 bank_addr_bias 198
+CONV 0000 1000 pad_left 3 pad_top 0 bank_addr_in 893 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 4035 bank_id_in 8 bank_id_out 24 bank_addr_weights 147 length 112 bias_offset 0 bank_addr_bias 199
+POOL 0100 0000 pad_top 0 pad_bottom 0 pad_left 0 pad_right 1 shift_avg 0 bank_addr_in 3584 bank_addr_out 896 length 56 jump_read_endl 448 jump_write_endl 224 stride_w 2 stride_h 2 valid_pixel_parallel 4 kernel_w 3 select_avg 0 channel_group 4 bank_id_in 24 bank_id_out 16 pool_type 0 kernel_h 3
+LOAD 0000 0000 mode 0 bank_addr 1568 bank_id 10 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 580608
+LOAD 0000 0000 mode 0 bank_addr 1344 bank_id 11 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 584192
+LOAD 0000 0000 mode 0 bank_addr 1568 bank_id 11 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 587776
+LOAD 0000 0000 mode 0 bank_addr 1344 bank_id 12 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 591360
+LOAD 0000 0000 mode 0 bank_addr 1568 bank_id 12 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 594944
+LOAD 0000 0000 mode 0 bank_addr 1344 bank_id 13 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 598528
+LOAD 0000 0000 mode 0 bank_addr 1568 bank_id 13 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 602112
+LOAD 0000 0000 mode 0 bank_addr 1344 bank_id 14 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 605696
+LOAD 0000 0000 mode 0 bank_addr 1568 bank_id 14 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 609280
+LOAD 0000 0000 mode 0 bank_addr 1344 bank_id 15 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 612864
+LOAD 0000 0000 mode 0 bank_addr 1568 bank_id 15 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 616448
+LOAD 0000 0000 mode 0 bank_addr 1792 bank_id 8 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 620032
+LOAD 0000 0000 mode 0 bank_addr 2016 bank_id 8 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 623616
+LOAD 0000 0000 mode 0 bank_addr 1792 bank_id 9 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 627200
+LOAD 0000 0000 mode 0 bank_addr 2016 bank_id 9 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 630784
+LOAD 0000 0100 mode 0 bank_addr 1792 bank_id 10 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 634368
+CONV 0001 0000 pad_left 3 pad_top 0 bank_addr_in 1341 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 4480 bank_id_in 8 bank_id_out 24 bank_addr_weights 0 length 112 bias_offset 0 bank_addr_bias 196
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 1341 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 4481 bank_id_in 8 bank_id_out 24 bank_addr_weights 49 length 112 bias_offset 0 bank_addr_bias 197
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 1341 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 4482 bank_id_in 8 bank_id_out 24 bank_addr_weights 98 length 112 bias_offset 0 bank_addr_bias 198
+CONV 0000 1000 pad_left 3 pad_top 0 bank_addr_in 1341 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 4483 bank_id_in 8 bank_id_out 24 bank_addr_weights 147 length 112 bias_offset 0 bank_addr_bias 199
+POOL 0100 0100 pad_top 0 pad_bottom 0 pad_left 0 pad_right 1 shift_avg 0 bank_addr_in 4032 bank_addr_out 896 length 56 jump_read_endl 448 jump_write_endl 224 stride_w 2 stride_h 2 valid_pixel_parallel 4 kernel_w 3 select_avg 0 channel_group 4 bank_id_in 24 bank_id_out 20 pool_type 0 kernel_h 3
+LOAD 0000 0000 mode 0 bank_addr 2016 bank_id 10 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 637952
+LOAD 0000 0000 mode 0 bank_addr 1792 bank_id 11 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 641536
+LOAD 0000 0000 mode 0 bank_addr 2016 bank_id 11 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 645120
+LOAD 0000 0000 mode 0 bank_addr 1792 bank_id 12 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 648704
+LOAD 0000 0000 mode 0 bank_addr 2016 bank_id 12 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 652288
+LOAD 0000 0000 mode 0 bank_addr 1792 bank_id 13 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 655872
+LOAD 0000 0000 mode 0 bank_addr 2016 bank_id 13 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 659456
+LOAD 0000 0000 mode 0 bank_addr 1792 bank_id 14 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 663040
+LOAD 0000 0000 mode 0 bank_addr 2016 bank_id 14 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 666624
+LOAD 0000 0000 mode 0 bank_addr 1792 bank_id 15 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 670208
+LOAD 0000 0000 mode 0 bank_addr 2016 bank_id 15 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 673792
+LOAD 0000 0000 mode 0 bank_addr 2240 bank_id 8 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 677376
+LOAD 0000 0000 mode 0 bank_addr 2464 bank_id 8 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 680960
+LOAD 0000 0000 mode 0 bank_addr 2240 bank_id 9 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 684544
+LOAD 0000 0000 mode 0 bank_addr 2464 bank_id 9 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 688128
+LOAD 0000 0100 mode 0 bank_addr 2240 bank_id 10 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 691712
+CONV 0001 0000 pad_left 3 pad_top 0 bank_addr_in 1789 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 4928 bank_id_in 8 bank_id_out 24 bank_addr_weights 0 length 112 bias_offset 0 bank_addr_bias 196
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 1789 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 4929 bank_id_in 8 bank_id_out 24 bank_addr_weights 49 length 112 bias_offset 0 bank_addr_bias 197
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 1789 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 4930 bank_id_in 8 bank_id_out 24 bank_addr_weights 98 length 112 bias_offset 0 bank_addr_bias 198
+CONV 0000 1000 pad_left 3 pad_top 0 bank_addr_in 1789 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 4931 bank_id_in 8 bank_id_out 24 bank_addr_weights 147 length 112 bias_offset 0 bank_addr_bias 199
+POOL 0100 0000 pad_top 0 pad_bottom 0 pad_left 0 pad_right 1 shift_avg 0 bank_addr_in 4480 bank_addr_out 1120 length 56 jump_read_endl 448 jump_write_endl 224 stride_w 2 stride_h 2 valid_pixel_parallel 4 kernel_w 3 select_avg 0 channel_group 4 bank_id_in 24 bank_id_out 16 pool_type 0 kernel_h 3
+LOAD 0000 0000 mode 0 bank_addr 2464 bank_id 10 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 695296
+LOAD 0000 0000 mode 0 bank_addr 2240 bank_id 11 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 698880
+LOAD 0000 0000 mode 0 bank_addr 2464 bank_id 11 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 702464
+LOAD 0000 0000 mode 0 bank_addr 2240 bank_id 12 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 706048
+LOAD 0000 0000 mode 0 bank_addr 2464 bank_id 12 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 709632
+LOAD 0000 0000 mode 0 bank_addr 2240 bank_id 13 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 713216
+LOAD 0000 0000 mode 0 bank_addr 2464 bank_id 13 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 716800
+LOAD 0000 0000 mode 0 bank_addr 2240 bank_id 14 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 720384
+LOAD 0000 0000 mode 0 bank_addr 2464 bank_id 14 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 723968
+LOAD 0000 0000 mode 0 bank_addr 2240 bank_id 15 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 727552
+LOAD 0000 0000 mode 0 bank_addr 2464 bank_id 15 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 731136
+LOAD 0000 0000 mode 0 bank_addr 2688 bank_id 8 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 734720
+LOAD 0000 0000 mode 0 bank_addr 2912 bank_id 8 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 738304
+LOAD 0000 0000 mode 0 bank_addr 2688 bank_id 9 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 741888
+LOAD 0000 0000 mode 0 bank_addr 2912 bank_id 9 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 745472
+LOAD 0000 0100 mode 0 bank_addr 2688 bank_id 10 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 749056
+CONV 0001 0000 pad_left 3 pad_top 0 bank_addr_in 2237 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 5376 bank_id_in 8 bank_id_out 24 bank_addr_weights 0 length 112 bias_offset 0 bank_addr_bias 196
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 2237 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 5377 bank_id_in 8 bank_id_out 24 bank_addr_weights 49 length 112 bias_offset 0 bank_addr_bias 197
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 2237 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 5378 bank_id_in 8 bank_id_out 24 bank_addr_weights 98 length 112 bias_offset 0 bank_addr_bias 198
+CONV 0000 1000 pad_left 3 pad_top 0 bank_addr_in 2237 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 15 bank_addr_out 5379 bank_id_in 8 bank_id_out 24 bank_addr_weights 147 length 112 bias_offset 0 bank_addr_bias 199
+POOL 0100 0100 pad_top 0 pad_bottom 0 pad_left 0 pad_right 1 shift_avg 0 bank_addr_in 4928 bank_addr_out 1120 length 56 jump_read_endl 448 jump_write_endl 224 stride_w 2 stride_h 2 valid_pixel_parallel 4 kernel_w 3 select_avg 0 channel_group 4 bank_id_in 24 bank_id_out 20 pool_type 0 kernel_h 3
+LOAD 0000 0000 mode 0 bank_addr 2912 bank_id 10 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 752640
+LOAD 0000 0000 mode 0 bank_addr 2688 bank_id 11 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 756224
+LOAD 0000 0000 mode 0 bank_addr 2912 bank_id 11 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 759808
+LOAD 0000 0000 mode 0 bank_addr 2688 bank_id 12 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 763392
+LOAD 0000 0000 mode 0 bank_addr 2912 bank_id 12 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 766976
+LOAD 0000 0000 mode 0 bank_addr 2688 bank_id 13 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 770560
+LOAD 0000 0000 mode 0 bank_addr 2912 bank_id 13 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 774144
+LOAD 0000 0000 mode 0 bank_addr 2688 bank_id 14 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 777728
+LOAD 0000 0000 mode 0 bank_addr 2912 bank_id 14 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 781312
+LOAD 0000 0000 mode 0 bank_addr 2688 bank_id 15 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 784896
+LOAD 0000 0000 mode 0 bank_addr 2912 bank_id 15 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 788480
+LOAD 0000 0000 mode 0 bank_addr 3136 bank_id 8 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 792064
+LOAD 0000 0000 mode 0 bank_addr 3360 bank_id 8 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 795648
+LOAD 0000 0100 mode 0 bank_addr 3136 bank_id 9 jump_read 16 jump_write 1 length 224 channel 16 reg_id 1 ddr_addr 799232
+CONV 0001 0000 pad_left 3 pad_top 0 bank_addr_in 4093 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 4 bank_addr_out 5824 bank_id_in 8 bank_id_out 24 bank_addr_weights 0 length 112 bias_offset 0 bank_addr_bias 196
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 4093 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 4 bank_addr_out 5825 bank_id_in 8 bank_id_out 24 bank_addr_weights 49 length 112 bias_offset 0 bank_addr_bias 197
+CONV 0000 0000 pad_left 3 pad_top 0 bank_addr_in 4093 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 4 bank_addr_out 5826 bank_id_in 8 bank_id_out 24 bank_addr_weights 98 length 112 bias_offset 0 bank_addr_bias 198
+CONV 0000 1000 pad_left 3 pad_top 0 bank_addr_in 4093 channel_group 1 channel_offset 13 pad_right 4 pad_bottom 4 bank_addr_out 5827 bank_id_in 8 bank_id_out 24 bank_addr_weights 147 length 112 bias_offset 0 bank_addr_bias 199
+POOL 0100 0000 pad_top 0 pad_bottom 0 pad_left 0 pad_right 1 shift_avg 0 bank_addr_in 5376 bank_addr_out 1344 length 56 jump_read_endl 448 jump_write_endl 224 stride_w 2 stride_h 2 valid_pixel_parallel 4 kernel_w 3 select_avg 0 channel_group 4 bank_id_in 24 bank_id_out 16 pool_type 0 kernel_h 3
+POOL 0000 0100 pad_top 0 pad_bottom 1 pad_left 0 pad_right 1 shift_avg 0 bank_addr_in 5824 bank_addr_out 1344 length 56 jump_read_endl 448 jump_write_endl 224 stride_w 2 stride_h 2 valid_pixel_parallel 4 kernel_w 3 select_avg 0 channel_group 4 bank_id_in 24 bank_id_out 20 pool_type 0 kernel_h 3
+CONVINIT 0000 0000 act_type 1 shift_cut 5 jump_read 4 stride_out 1 jump_read_endl 1 stride_h 1 kernel_h 1 valid_pixel_parallel 8 stride_offset_in 0 jump_write 4 stride_w 1 kernel_w 1 stride_offset_out 0 jump_write_endl 1
+CONV 1000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 0 bank_id_in 16 bank_id_out 0 bank_addr_weights 200 length 56 bias_offset 0 bank_addr_bias 216
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1 bank_id_in 16 bank_id_out 0 bank_addr_weights 204 length 56 bias_offset 0 bank_addr_bias 217
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2 bank_id_in 16 bank_id_out 0 bank_addr_weights 208 length 56 bias_offset 0 bank_addr_bias 218
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3 bank_id_in 16 bank_id_out 0 bank_addr_weights 212 length 56 bias_offset 0 bank_addr_bias 219
+CONV 1000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 224 bank_id_in 16 bank_id_out 0 bank_addr_weights 200 length 56 bias_offset 0 bank_addr_bias 216
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 225 bank_id_in 16 bank_id_out 0 bank_addr_weights 204 length 56 bias_offset 0 bank_addr_bias 217
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 226 bank_id_in 16 bank_id_out 0 bank_addr_weights 208 length 56 bias_offset 0 bank_addr_bias 218
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 227 bank_id_in 16 bank_id_out 0 bank_addr_weights 212 length 56 bias_offset 0 bank_addr_bias 219
+CONV 1000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 448 bank_id_in 16 bank_id_out 0 bank_addr_weights 200 length 56 bias_offset 0 bank_addr_bias 216
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 449 bank_id_in 16 bank_id_out 0 bank_addr_weights 204 length 56 bias_offset 0 bank_addr_bias 217
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 450 bank_id_in 16 bank_id_out 0 bank_addr_weights 208 length 56 bias_offset 0 bank_addr_bias 218
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 451 bank_id_in 16 bank_id_out 0 bank_addr_weights 212 length 56 bias_offset 0 bank_addr_bias 219
+CONV 1000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 672 bank_id_in 16 bank_id_out 0 bank_addr_weights 200 length 56 bias_offset 0 bank_addr_bias 216
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 673 bank_id_in 16 bank_id_out 0 bank_addr_weights 204 length 56 bias_offset 0 bank_addr_bias 217
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 674 bank_id_in 16 bank_id_out 0 bank_addr_weights 208 length 56 bias_offset 0 bank_addr_bias 218
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 675 bank_id_in 16 bank_id_out 0 bank_addr_weights 212 length 56 bias_offset 0 bank_addr_bias 219
+CONV 1000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 896 bank_id_in 16 bank_id_out 0 bank_addr_weights 200 length 56 bias_offset 0 bank_addr_bias 216
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 897 bank_id_in 16 bank_id_out 0 bank_addr_weights 204 length 56 bias_offset 0 bank_addr_bias 217
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 898 bank_id_in 16 bank_id_out 0 bank_addr_weights 208 length 56 bias_offset 0 bank_addr_bias 218
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 899 bank_id_in 16 bank_id_out 0 bank_addr_weights 212 length 56 bias_offset 0 bank_addr_bias 219
+CONV 1000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1120 bank_id_in 16 bank_id_out 0 bank_addr_weights 200 length 56 bias_offset 0 bank_addr_bias 216
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1121 bank_id_in 16 bank_id_out 0 bank_addr_weights 204 length 56 bias_offset 0 bank_addr_bias 217
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1122 bank_id_in 16 bank_id_out 0 bank_addr_weights 208 length 56 bias_offset 0 bank_addr_bias 218
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1123 bank_id_in 16 bank_id_out 0 bank_addr_weights 212 length 56 bias_offset 0 bank_addr_bias 219
+CONV 1000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1344 bank_id_in 16 bank_id_out 0 bank_addr_weights 200 length 56 bias_offset 0 bank_addr_bias 216
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1345 bank_id_in 16 bank_id_out 0 bank_addr_weights 204 length 56 bias_offset 0 bank_addr_bias 217
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1346 bank_id_in 16 bank_id_out 0 bank_addr_weights 208 length 56 bias_offset 0 bank_addr_bias 218
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1347 bank_id_in 16 bank_id_out 0 bank_addr_weights 212 length 56 bias_offset 0 bank_addr_bias 219
+CONVINIT 0000 0000 act_type 1 shift_cut 8 jump_read 4 stride_out 1 jump_read_endl 224 stride_h 1 kernel_h 3 valid_pixel_parallel 8 stride_offset_in 0 jump_write 4 stride_w 1 kernel_w 3 stride_offset_out 0 jump_write_endl 1
+CONV 0000 0000 pad_left 1 pad_top 1 bank_addr_in 3868 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 0 bank_id_in 7 bank_id_out 8 bank_addr_weights 220 length 56 bias_offset 0 bank_addr_bias 364
+CONV 0000 0000 pad_left 1 pad_top 1 bank_addr_in 3868 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 1 bank_id_in 7 bank_id_out 8 bank_addr_weights 256 length 56 bias_offset 0 bank_addr_bias 365
+CONV 0000 0000 pad_left 1 pad_top 1 bank_addr_in 3868 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 2 bank_id_in 7 bank_id_out 8 bank_addr_weights 292 length 56 bias_offset 0 bank_addr_bias 366
+CONV 0000 0000 pad_left 1 pad_top 1 bank_addr_in 3868 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 3 bank_id_in 7 bank_id_out 8 bank_addr_weights 328 length 56 bias_offset 0 bank_addr_bias 367
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 4092 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 1 bank_addr_out 224 bank_id_in 7 bank_id_out 8 bank_addr_weights 220 length 56 bias_offset 0 bank_addr_bias 364
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 4092 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 1 bank_addr_out 225 bank_id_in 7 bank_id_out 8 bank_addr_weights 256 length 56 bias_offset 0 bank_addr_bias 365
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 4092 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 1 bank_addr_out 226 bank_id_in 7 bank_id_out 8 bank_addr_weights 292 length 56 bias_offset 0 bank_addr_bias 366
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 4092 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 1 bank_addr_out 227 bank_id_in 7 bank_id_out 8 bank_addr_weights 328 length 56 bias_offset 0 bank_addr_bias 367
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 220 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 448 bank_id_in 7 bank_id_out 8 bank_addr_weights 220 length 56 bias_offset 0 bank_addr_bias 364
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 220 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 449 bank_id_in 7 bank_id_out 8 bank_addr_weights 256 length 56 bias_offset 0 bank_addr_bias 365
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 220 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 450 bank_id_in 7 bank_id_out 8 bank_addr_weights 292 length 56 bias_offset 0 bank_addr_bias 366
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 220 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 451 bank_id_in 7 bank_id_out 8 bank_addr_weights 328 length 56 bias_offset 0 bank_addr_bias 367
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 444 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 672 bank_id_in 7 bank_id_out 8 bank_addr_weights 220 length 56 bias_offset 0 bank_addr_bias 364
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 444 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 673 bank_id_in 7 bank_id_out 8 bank_addr_weights 256 length 56 bias_offset 0 bank_addr_bias 365
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 444 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 674 bank_id_in 7 bank_id_out 8 bank_addr_weights 292 length 56 bias_offset 0 bank_addr_bias 366
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 444 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 675 bank_id_in 7 bank_id_out 8 bank_addr_weights 328 length 56 bias_offset 0 bank_addr_bias 367
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 668 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 896 bank_id_in 7 bank_id_out 8 bank_addr_weights 220 length 56 bias_offset 0 bank_addr_bias 364
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 668 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 897 bank_id_in 7 bank_id_out 8 bank_addr_weights 256 length 56 bias_offset 0 bank_addr_bias 365
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 668 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 898 bank_id_in 7 bank_id_out 8 bank_addr_weights 292 length 56 bias_offset 0 bank_addr_bias 366
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 668 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 899 bank_id_in 7 bank_id_out 8 bank_addr_weights 328 length 56 bias_offset 0 bank_addr_bias 367
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 892 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 1120 bank_id_in 7 bank_id_out 8 bank_addr_weights 220 length 56 bias_offset 0 bank_addr_bias 364
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 892 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 1121 bank_id_in 7 bank_id_out 8 bank_addr_weights 256 length 56 bias_offset 0 bank_addr_bias 365
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 892 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 1122 bank_id_in 7 bank_id_out 8 bank_addr_weights 292 length 56 bias_offset 0 bank_addr_bias 366
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 892 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 15 bank_addr_out 1123 bank_id_in 7 bank_id_out 8 bank_addr_weights 328 length 56 bias_offset 0 bank_addr_bias 367
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 1116 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 1 bank_addr_out 1344 bank_id_in 7 bank_id_out 8 bank_addr_weights 220 length 56 bias_offset 0 bank_addr_bias 364
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 1116 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 1 bank_addr_out 1345 bank_id_in 7 bank_id_out 8 bank_addr_weights 256 length 56 bias_offset 0 bank_addr_bias 365
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 1116 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 1 bank_addr_out 1346 bank_id_in 7 bank_id_out 8 bank_addr_weights 292 length 56 bias_offset 0 bank_addr_bias 366
+CONV 0000 0000 pad_left 1 pad_top 0 bank_addr_in 1116 channel_group 4 channel_offset 0 pad_right 1 pad_bottom 1 bank_addr_out 1347 bank_id_in 7 bank_id_out 8 bank_addr_weights 328 length 56 bias_offset 0 bank_addr_bias 367
+CONVINIT 0000 0000 act_type 0 shift_cut 7 jump_read 4 stride_out 1 jump_read_endl 1 stride_h 1 kernel_h 1 valid_pixel_parallel 8 stride_offset_in 0 jump_write 16 stride_w 1 kernel_w 1 stride_offset_out 0 jump_write_endl 1
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 0 bank_id_in 8 bank_id_out 24 bank_addr_weights 368 length 56 bias_offset 0 bank_addr_bias 1392
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1 bank_id_in 8 bank_id_out 24 bank_addr_weights 432 length 56 bias_offset 0 bank_addr_bias 1393
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2 bank_id_in 8 bank_id_out 24 bank_addr_weights 496 length 56 bias_offset 0 bank_addr_bias 1394
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3 bank_id_in 8 bank_id_out 24 bank_addr_weights 560 length 56 bias_offset 0 bank_addr_bias 1395
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4 bank_id_in 8 bank_id_out 24 bank_addr_weights 624 length 56 bias_offset 0 bank_addr_bias 1396
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5 bank_id_in 8 bank_id_out 24 bank_addr_weights 688 length 56 bias_offset 0 bank_addr_bias 1397
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 6 bank_id_in 8 bank_id_out 24 bank_addr_weights 752 length 56 bias_offset 0 bank_addr_bias 1398
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 7 bank_id_in 8 bank_id_out 24 bank_addr_weights 816 length 56 bias_offset 0 bank_addr_bias 1399
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 8 bank_id_in 8 bank_id_out 24 bank_addr_weights 880 length 56 bias_offset 0 bank_addr_bias 1400
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 9 bank_id_in 8 bank_id_out 24 bank_addr_weights 944 length 56 bias_offset 0 bank_addr_bias 1401
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 10 bank_id_in 8 bank_id_out 24 bank_addr_weights 1008 length 56 bias_offset 0 bank_addr_bias 1402
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 11 bank_id_in 8 bank_id_out 24 bank_addr_weights 1072 length 56 bias_offset 0 bank_addr_bias 1403
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 12 bank_id_in 8 bank_id_out 24 bank_addr_weights 1136 length 56 bias_offset 0 bank_addr_bias 1404
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 13 bank_id_in 8 bank_id_out 24 bank_addr_weights 1200 length 56 bias_offset 0 bank_addr_bias 1405
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 14 bank_id_in 8 bank_id_out 24 bank_addr_weights 1264 length 56 bias_offset 0 bank_addr_bias 1406
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 15 bank_id_in 8 bank_id_out 24 bank_addr_weights 1328 length 56 bias_offset 0 bank_addr_bias 1407
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 896 bank_id_in 8 bank_id_out 24 bank_addr_weights 368 length 56 bias_offset 0 bank_addr_bias 1392
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 897 bank_id_in 8 bank_id_out 24 bank_addr_weights 432 length 56 bias_offset 0 bank_addr_bias 1393
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 898 bank_id_in 8 bank_id_out 24 bank_addr_weights 496 length 56 bias_offset 0 bank_addr_bias 1394
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 899 bank_id_in 8 bank_id_out 24 bank_addr_weights 560 length 56 bias_offset 0 bank_addr_bias 1395
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 900 bank_id_in 8 bank_id_out 24 bank_addr_weights 624 length 56 bias_offset 0 bank_addr_bias 1396
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 901 bank_id_in 8 bank_id_out 24 bank_addr_weights 688 length 56 bias_offset 0 bank_addr_bias 1397
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 902 bank_id_in 8 bank_id_out 24 bank_addr_weights 752 length 56 bias_offset 0 bank_addr_bias 1398
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 903 bank_id_in 8 bank_id_out 24 bank_addr_weights 816 length 56 bias_offset 0 bank_addr_bias 1399
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 904 bank_id_in 8 bank_id_out 24 bank_addr_weights 880 length 56 bias_offset 0 bank_addr_bias 1400
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 905 bank_id_in 8 bank_id_out 24 bank_addr_weights 944 length 56 bias_offset 0 bank_addr_bias 1401
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 906 bank_id_in 8 bank_id_out 24 bank_addr_weights 1008 length 56 bias_offset 0 bank_addr_bias 1402
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 907 bank_id_in 8 bank_id_out 24 bank_addr_weights 1072 length 56 bias_offset 0 bank_addr_bias 1403
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 908 bank_id_in 8 bank_id_out 24 bank_addr_weights 1136 length 56 bias_offset 0 bank_addr_bias 1404
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 909 bank_id_in 8 bank_id_out 24 bank_addr_weights 1200 length 56 bias_offset 0 bank_addr_bias 1405
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 910 bank_id_in 8 bank_id_out 24 bank_addr_weights 1264 length 56 bias_offset 0 bank_addr_bias 1406
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 911 bank_id_in 8 bank_id_out 24 bank_addr_weights 1328 length 56 bias_offset 0 bank_addr_bias 1407
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1792 bank_id_in 8 bank_id_out 24 bank_addr_weights 368 length 56 bias_offset 0 bank_addr_bias 1392
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1793 bank_id_in 8 bank_id_out 24 bank_addr_weights 432 length 56 bias_offset 0 bank_addr_bias 1393
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1794 bank_id_in 8 bank_id_out 24 bank_addr_weights 496 length 56 bias_offset 0 bank_addr_bias 1394
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1795 bank_id_in 8 bank_id_out 24 bank_addr_weights 560 length 56 bias_offset 0 bank_addr_bias 1395
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1796 bank_id_in 8 bank_id_out 24 bank_addr_weights 624 length 56 bias_offset 0 bank_addr_bias 1396
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1797 bank_id_in 8 bank_id_out 24 bank_addr_weights 688 length 56 bias_offset 0 bank_addr_bias 1397
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1798 bank_id_in 8 bank_id_out 24 bank_addr_weights 752 length 56 bias_offset 0 bank_addr_bias 1398
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1799 bank_id_in 8 bank_id_out 24 bank_addr_weights 816 length 56 bias_offset 0 bank_addr_bias 1399
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1800 bank_id_in 8 bank_id_out 24 bank_addr_weights 880 length 56 bias_offset 0 bank_addr_bias 1400
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1801 bank_id_in 8 bank_id_out 24 bank_addr_weights 944 length 56 bias_offset 0 bank_addr_bias 1401
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1802 bank_id_in 8 bank_id_out 24 bank_addr_weights 1008 length 56 bias_offset 0 bank_addr_bias 1402
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1803 bank_id_in 8 bank_id_out 24 bank_addr_weights 1072 length 56 bias_offset 0 bank_addr_bias 1403
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1804 bank_id_in 8 bank_id_out 24 bank_addr_weights 1136 length 56 bias_offset 0 bank_addr_bias 1404
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1805 bank_id_in 8 bank_id_out 24 bank_addr_weights 1200 length 56 bias_offset 0 bank_addr_bias 1405
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1806 bank_id_in 8 bank_id_out 24 bank_addr_weights 1264 length 56 bias_offset 0 bank_addr_bias 1406
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1807 bank_id_in 8 bank_id_out 24 bank_addr_weights 1328 length 56 bias_offset 0 bank_addr_bias 1407
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2688 bank_id_in 8 bank_id_out 24 bank_addr_weights 368 length 56 bias_offset 0 bank_addr_bias 1392
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2689 bank_id_in 8 bank_id_out 24 bank_addr_weights 432 length 56 bias_offset 0 bank_addr_bias 1393
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2690 bank_id_in 8 bank_id_out 24 bank_addr_weights 496 length 56 bias_offset 0 bank_addr_bias 1394
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2691 bank_id_in 8 bank_id_out 24 bank_addr_weights 560 length 56 bias_offset 0 bank_addr_bias 1395
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2692 bank_id_in 8 bank_id_out 24 bank_addr_weights 624 length 56 bias_offset 0 bank_addr_bias 1396
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2693 bank_id_in 8 bank_id_out 24 bank_addr_weights 688 length 56 bias_offset 0 bank_addr_bias 1397
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2694 bank_id_in 8 bank_id_out 24 bank_addr_weights 752 length 56 bias_offset 0 bank_addr_bias 1398
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2695 bank_id_in 8 bank_id_out 24 bank_addr_weights 816 length 56 bias_offset 0 bank_addr_bias 1399
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2696 bank_id_in 8 bank_id_out 24 bank_addr_weights 880 length 56 bias_offset 0 bank_addr_bias 1400
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2697 bank_id_in 8 bank_id_out 24 bank_addr_weights 944 length 56 bias_offset 0 bank_addr_bias 1401
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2698 bank_id_in 8 bank_id_out 24 bank_addr_weights 1008 length 56 bias_offset 0 bank_addr_bias 1402
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2699 bank_id_in 8 bank_id_out 24 bank_addr_weights 1072 length 56 bias_offset 0 bank_addr_bias 1403
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2700 bank_id_in 8 bank_id_out 24 bank_addr_weights 1136 length 56 bias_offset 0 bank_addr_bias 1404
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2701 bank_id_in 8 bank_id_out 24 bank_addr_weights 1200 length 56 bias_offset 0 bank_addr_bias 1405
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2702 bank_id_in 8 bank_id_out 24 bank_addr_weights 1264 length 56 bias_offset 0 bank_addr_bias 1406
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2703 bank_id_in 8 bank_id_out 24 bank_addr_weights 1328 length 56 bias_offset 0 bank_addr_bias 1407
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3584 bank_id_in 8 bank_id_out 24 bank_addr_weights 368 length 56 bias_offset 0 bank_addr_bias 1392
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3585 bank_id_in 8 bank_id_out 24 bank_addr_weights 432 length 56 bias_offset 0 bank_addr_bias 1393
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3586 bank_id_in 8 bank_id_out 24 bank_addr_weights 496 length 56 bias_offset 0 bank_addr_bias 1394
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3587 bank_id_in 8 bank_id_out 24 bank_addr_weights 560 length 56 bias_offset 0 bank_addr_bias 1395
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3588 bank_id_in 8 bank_id_out 24 bank_addr_weights 624 length 56 bias_offset 0 bank_addr_bias 1396
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3589 bank_id_in 8 bank_id_out 24 bank_addr_weights 688 length 56 bias_offset 0 bank_addr_bias 1397
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3590 bank_id_in 8 bank_id_out 24 bank_addr_weights 752 length 56 bias_offset 0 bank_addr_bias 1398
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3591 bank_id_in 8 bank_id_out 24 bank_addr_weights 816 length 56 bias_offset 0 bank_addr_bias 1399
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3592 bank_id_in 8 bank_id_out 24 bank_addr_weights 880 length 56 bias_offset 0 bank_addr_bias 1400
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3593 bank_id_in 8 bank_id_out 24 bank_addr_weights 944 length 56 bias_offset 0 bank_addr_bias 1401
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3594 bank_id_in 8 bank_id_out 24 bank_addr_weights 1008 length 56 bias_offset 0 bank_addr_bias 1402
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3595 bank_id_in 8 bank_id_out 24 bank_addr_weights 1072 length 56 bias_offset 0 bank_addr_bias 1403
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3596 bank_id_in 8 bank_id_out 24 bank_addr_weights 1136 length 56 bias_offset 0 bank_addr_bias 1404
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3597 bank_id_in 8 bank_id_out 24 bank_addr_weights 1200 length 56 bias_offset 0 bank_addr_bias 1405
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3598 bank_id_in 8 bank_id_out 24 bank_addr_weights 1264 length 56 bias_offset 0 bank_addr_bias 1406
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3599 bank_id_in 8 bank_id_out 24 bank_addr_weights 1328 length 56 bias_offset 0 bank_addr_bias 1407
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4480 bank_id_in 8 bank_id_out 24 bank_addr_weights 368 length 56 bias_offset 0 bank_addr_bias 1392
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4481 bank_id_in 8 bank_id_out 24 bank_addr_weights 432 length 56 bias_offset 0 bank_addr_bias 1393
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4482 bank_id_in 8 bank_id_out 24 bank_addr_weights 496 length 56 bias_offset 0 bank_addr_bias 1394
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4483 bank_id_in 8 bank_id_out 24 bank_addr_weights 560 length 56 bias_offset 0 bank_addr_bias 1395
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4484 bank_id_in 8 bank_id_out 24 bank_addr_weights 624 length 56 bias_offset 0 bank_addr_bias 1396
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4485 bank_id_in 8 bank_id_out 24 bank_addr_weights 688 length 56 bias_offset 0 bank_addr_bias 1397
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4486 bank_id_in 8 bank_id_out 24 bank_addr_weights 752 length 56 bias_offset 0 bank_addr_bias 1398
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4487 bank_id_in 8 bank_id_out 24 bank_addr_weights 816 length 56 bias_offset 0 bank_addr_bias 1399
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4488 bank_id_in 8 bank_id_out 24 bank_addr_weights 880 length 56 bias_offset 0 bank_addr_bias 1400
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4489 bank_id_in 8 bank_id_out 24 bank_addr_weights 944 length 56 bias_offset 0 bank_addr_bias 1401
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4490 bank_id_in 8 bank_id_out 24 bank_addr_weights 1008 length 56 bias_offset 0 bank_addr_bias 1402
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4491 bank_id_in 8 bank_id_out 24 bank_addr_weights 1072 length 56 bias_offset 0 bank_addr_bias 1403
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4492 bank_id_in 8 bank_id_out 24 bank_addr_weights 1136 length 56 bias_offset 0 bank_addr_bias 1404
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4493 bank_id_in 8 bank_id_out 24 bank_addr_weights 1200 length 56 bias_offset 0 bank_addr_bias 1405
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4494 bank_id_in 8 bank_id_out 24 bank_addr_weights 1264 length 56 bias_offset 0 bank_addr_bias 1406
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4495 bank_id_in 8 bank_id_out 24 bank_addr_weights 1328 length 56 bias_offset 0 bank_addr_bias 1407
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5376 bank_id_in 8 bank_id_out 24 bank_addr_weights 368 length 56 bias_offset 0 bank_addr_bias 1392
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5377 bank_id_in 8 bank_id_out 24 bank_addr_weights 432 length 56 bias_offset 0 bank_addr_bias 1393
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5378 bank_id_in 8 bank_id_out 24 bank_addr_weights 496 length 56 bias_offset 0 bank_addr_bias 1394
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5379 bank_id_in 8 bank_id_out 24 bank_addr_weights 560 length 56 bias_offset 0 bank_addr_bias 1395
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5380 bank_id_in 8 bank_id_out 24 bank_addr_weights 624 length 56 bias_offset 0 bank_addr_bias 1396
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5381 bank_id_in 8 bank_id_out 24 bank_addr_weights 688 length 56 bias_offset 0 bank_addr_bias 1397
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5382 bank_id_in 8 bank_id_out 24 bank_addr_weights 752 length 56 bias_offset 0 bank_addr_bias 1398
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5383 bank_id_in 8 bank_id_out 24 bank_addr_weights 816 length 56 bias_offset 0 bank_addr_bias 1399
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5384 bank_id_in 8 bank_id_out 24 bank_addr_weights 880 length 56 bias_offset 0 bank_addr_bias 1400
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5385 bank_id_in 8 bank_id_out 24 bank_addr_weights 944 length 56 bias_offset 0 bank_addr_bias 1401
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5386 bank_id_in 8 bank_id_out 24 bank_addr_weights 1008 length 56 bias_offset 0 bank_addr_bias 1402
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5387 bank_id_in 8 bank_id_out 24 bank_addr_weights 1072 length 56 bias_offset 0 bank_addr_bias 1403
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5388 bank_id_in 8 bank_id_out 24 bank_addr_weights 1136 length 56 bias_offset 0 bank_addr_bias 1404
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5389 bank_id_in 8 bank_id_out 24 bank_addr_weights 1200 length 56 bias_offset 0 bank_addr_bias 1405
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5390 bank_id_in 8 bank_id_out 24 bank_addr_weights 1264 length 56 bias_offset 0 bank_addr_bias 1406
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5391 bank_id_in 8 bank_id_out 24 bank_addr_weights 1328 length 56 bias_offset 0 bank_addr_bias 1407
+CONVINIT 0000 0000 act_type 0 shift_cut 5 jump_read 4 stride_out 1 jump_read_endl 1 stride_h 1 kernel_h 1 valid_pixel_parallel 8 stride_offset_in 0 jump_write 16 stride_w 1 kernel_w 1 stride_offset_out 0 jump_write_endl 1
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 0 bank_id_in 16 bank_id_out 0 bank_addr_weights 1408 length 56 bias_offset 0 bank_addr_bias 2432
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1 bank_id_in 16 bank_id_out 0 bank_addr_weights 1472 length 56 bias_offset 0 bank_addr_bias 2433
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2 bank_id_in 16 bank_id_out 0 bank_addr_weights 1536 length 56 bias_offset 0 bank_addr_bias 2434
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3 bank_id_in 16 bank_id_out 0 bank_addr_weights 1600 length 56 bias_offset 0 bank_addr_bias 2435
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4 bank_id_in 16 bank_id_out 0 bank_addr_weights 1664 length 56 bias_offset 0 bank_addr_bias 2436
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5 bank_id_in 16 bank_id_out 0 bank_addr_weights 1728 length 56 bias_offset 0 bank_addr_bias 2437
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 6 bank_id_in 16 bank_id_out 0 bank_addr_weights 1792 length 56 bias_offset 0 bank_addr_bias 2438
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 7 bank_id_in 16 bank_id_out 0 bank_addr_weights 1856 length 56 bias_offset 0 bank_addr_bias 2439
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 8 bank_id_in 16 bank_id_out 0 bank_addr_weights 1920 length 56 bias_offset 0 bank_addr_bias 2440
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 9 bank_id_in 16 bank_id_out 0 bank_addr_weights 1984 length 56 bias_offset 0 bank_addr_bias 2441
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 10 bank_id_in 16 bank_id_out 0 bank_addr_weights 2048 length 56 bias_offset 0 bank_addr_bias 2442
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 11 bank_id_in 16 bank_id_out 0 bank_addr_weights 2112 length 56 bias_offset 0 bank_addr_bias 2443
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 12 bank_id_in 16 bank_id_out 0 bank_addr_weights 2176 length 56 bias_offset 0 bank_addr_bias 2444
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 13 bank_id_in 16 bank_id_out 0 bank_addr_weights 2240 length 56 bias_offset 0 bank_addr_bias 2445
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 14 bank_id_in 16 bank_id_out 0 bank_addr_weights 2304 length 56 bias_offset 0 bank_addr_bias 2446
+ELEWINIT 0000 0000 bank_id_in 0 shift_read 0 jump_read 16 jump_read_endl 1 id 0 bank_addr_in 0
+ELEWINIT 0000 0000 bank_id_in 24 shift_read 0 jump_read 16 jump_read_endl 1 id 1 bank_addr_in 0
+CONV 0000 1000 pad_left 0 pad_top 0 bank_addr_in 0 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 15 bank_id_in 16 bank_id_out 0 bank_addr_weights 2368 length 56 bias_offset 0 bank_addr_bias 2447
+ELEW 0100 0000 num 2 nonlinear_type 1 jump_write 16 jump_write_endl 1 bank_id_out 24 bank_addr_out 0 width 56 bank_id_prelu 0 bank_addr_prelu 0 valid_pixel_parallel 4 channel_group 16 shift_write 0 shift_write_prelu_n 0
+ELEWINIT 0000 0000 bank_id_in 4 shift_read 0 jump_read 16 jump_read_endl 1 id 0 bank_addr_in 0
+ELEWINIT 0000 0000 bank_id_in 28 shift_read 0 jump_read 16 jump_read_endl 1 id 1 bank_addr_in 0
+ELEW 0000 0000 num 2 nonlinear_type 1 jump_write 16 jump_write_endl 1 bank_id_out 28 bank_addr_out 0 width 56 bank_id_prelu 0 bank_addr_prelu 0 valid_pixel_parallel 4 channel_group 16 shift_write 0 shift_write_prelu_n 0
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 896 bank_id_in 16 bank_id_out 0 bank_addr_weights 1408 length 56 bias_offset 0 bank_addr_bias 2432
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 897 bank_id_in 16 bank_id_out 0 bank_addr_weights 1472 length 56 bias_offset 0 bank_addr_bias 2433
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 898 bank_id_in 16 bank_id_out 0 bank_addr_weights 1536 length 56 bias_offset 0 bank_addr_bias 2434
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 899 bank_id_in 16 bank_id_out 0 bank_addr_weights 1600 length 56 bias_offset 0 bank_addr_bias 2435
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 900 bank_id_in 16 bank_id_out 0 bank_addr_weights 1664 length 56 bias_offset 0 bank_addr_bias 2436
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 901 bank_id_in 16 bank_id_out 0 bank_addr_weights 1728 length 56 bias_offset 0 bank_addr_bias 2437
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 902 bank_id_in 16 bank_id_out 0 bank_addr_weights 1792 length 56 bias_offset 0 bank_addr_bias 2438
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 903 bank_id_in 16 bank_id_out 0 bank_addr_weights 1856 length 56 bias_offset 0 bank_addr_bias 2439
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 904 bank_id_in 16 bank_id_out 0 bank_addr_weights 1920 length 56 bias_offset 0 bank_addr_bias 2440
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 905 bank_id_in 16 bank_id_out 0 bank_addr_weights 1984 length 56 bias_offset 0 bank_addr_bias 2441
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 906 bank_id_in 16 bank_id_out 0 bank_addr_weights 2048 length 56 bias_offset 0 bank_addr_bias 2442
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 907 bank_id_in 16 bank_id_out 0 bank_addr_weights 2112 length 56 bias_offset 0 bank_addr_bias 2443
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 908 bank_id_in 16 bank_id_out 0 bank_addr_weights 2176 length 56 bias_offset 0 bank_addr_bias 2444
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 909 bank_id_in 16 bank_id_out 0 bank_addr_weights 2240 length 56 bias_offset 0 bank_addr_bias 2445
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 910 bank_id_in 16 bank_id_out 0 bank_addr_weights 2304 length 56 bias_offset 0 bank_addr_bias 2446
+ELEWINIT 0000 0000 bank_id_in 0 shift_read 0 jump_read 16 jump_read_endl 1 id 0 bank_addr_in 896 
+ELEWINIT 0000 0000 bank_id_in 24 shift_read 0 jump_read 16 jump_read_endl 1 id 1 bank_addr_in 896
+CONV 0000 1000 pad_left 0 pad_top 0 bank_addr_in 224 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 911 bank_id_in 16 bank_id_out 0 bank_addr_weights 2368 length 56 bias_offset 0 bank_addr_bias 2447
+ELEW 0100 0000 num 2 nonlinear_type 1 jump_write 16 jump_write_endl 1 bank_id_out 24 bank_addr_out 896 width 56 bank_id_prelu 0 bank_addr_prelu 0 valid_pixel_parallel 4 channel_group 16 shift_write 0 shift_write_prelu_n 0
+ELEWINIT 0000 0000 bank_id_in 4 shift_read 0 jump_read 16 jump_read_endl 1 id 0 bank_addr_in 896 
+ELEWINIT 0000 0000 bank_id_in 28 shift_read 0 jump_read 16 jump_read_endl 1 id 1 bank_addr_in 896 
+ELEW 0000 0000 num 2 nonlinear_type 1 jump_write 16 jump_write_endl 1 bank_id_out 28 bank_addr_out 896 width 56 bank_id_prelu 0 bank_addr_prelu 0 valid_pixel_parallel 4 channel_group 16 shift_write 0 shift_write_prelu_n 0
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1792 bank_id_in 16 bank_id_out 0 bank_addr_weights 1408 length 56 bias_offset 0 bank_addr_bias 2432
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1793 bank_id_in 16 bank_id_out 0 bank_addr_weights 1472 length 56 bias_offset 0 bank_addr_bias 2433
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1794 bank_id_in 16 bank_id_out 0 bank_addr_weights 1536 length 56 bias_offset 0 bank_addr_bias 2434
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1795 bank_id_in 16 bank_id_out 0 bank_addr_weights 1600 length 56 bias_offset 0 bank_addr_bias 2435
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1796 bank_id_in 16 bank_id_out 0 bank_addr_weights 1664 length 56 bias_offset 0 bank_addr_bias 2436
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1797 bank_id_in 16 bank_id_out 0 bank_addr_weights 1728 length 56 bias_offset 0 bank_addr_bias 2437
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1798 bank_id_in 16 bank_id_out 0 bank_addr_weights 1792 length 56 bias_offset 0 bank_addr_bias 2438
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1799 bank_id_in 16 bank_id_out 0 bank_addr_weights 1856 length 56 bias_offset 0 bank_addr_bias 2439
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1800 bank_id_in 16 bank_id_out 0 bank_addr_weights 1920 length 56 bias_offset 0 bank_addr_bias 2440
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1801 bank_id_in 16 bank_id_out 0 bank_addr_weights 1984 length 56 bias_offset 0 bank_addr_bias 2441
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1802 bank_id_in 16 bank_id_out 0 bank_addr_weights 2048 length 56 bias_offset 0 bank_addr_bias 2442
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1803 bank_id_in 16 bank_id_out 0 bank_addr_weights 2112 length 56 bias_offset 0 bank_addr_bias 2443
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1804 bank_id_in 16 bank_id_out 0 bank_addr_weights 2176 length 56 bias_offset 0 bank_addr_bias 2444
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1805 bank_id_in 16 bank_id_out 0 bank_addr_weights 2240 length 56 bias_offset 0 bank_addr_bias 2445
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1806 bank_id_in 16 bank_id_out 0 bank_addr_weights 2304 length 56 bias_offset 0 bank_addr_bias 2446
+ELEWINIT 0000 0000 bank_id_in 0 shift_read 0 jump_read 16 jump_read_endl 1 id 0 bank_addr_in 1792
+ELEWINIT 0000 0000 bank_id_in 24 shift_read 0 jump_read 16 jump_read_endl 1 id 1 bank_addr_in 1792
+CONV 0000 1000 pad_left 0 pad_top 0 bank_addr_in 448 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1807 bank_id_in 16 bank_id_out 0 bank_addr_weights 2368 length 56 bias_offset 0 bank_addr_bias 2447
+ELEW 0100 0000 num 2 nonlinear_type 1 jump_write 16 jump_write_endl 1 bank_id_out 24 bank_addr_out 1792 width 56 bank_id_prelu 0 bank_addr_prelu 0 valid_pixel_parallel 4 channel_group 16 shift_write 0 shift_write_prelu_n 0
+ELEWINIT 0000 0000 bank_id_in 4 shift_read 0 jump_read 16 jump_read_endl 1 id 0 bank_addr_in 1792
+ELEWINIT 0000 0000 bank_id_in 28 shift_read 0 jump_read 16 jump_read_endl 1 id 1 bank_addr_in 1792
+ELEW 0000 0000 num 2 nonlinear_type 1 jump_write 16 jump_write_endl 1 bank_id_out 28 bank_addr_out 1792 width 56 bank_id_prelu 0 bank_addr_prelu 0 valid_pixel_parallel 4 channel_group 16 shift_write 0 shift_write_prelu_n 0
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2688 bank_id_in 16 bank_id_out 0 bank_addr_weights 1408 length 56 bias_offset 0 bank_addr_bias 2432
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2689 bank_id_in 16 bank_id_out 0 bank_addr_weights 1472 length 56 bias_offset 0 bank_addr_bias 2433
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2690 bank_id_in 16 bank_id_out 0 bank_addr_weights 1536 length 56 bias_offset 0 bank_addr_bias 2434
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2691 bank_id_in 16 bank_id_out 0 bank_addr_weights 1600 length 56 bias_offset 0 bank_addr_bias 2435
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2692 bank_id_in 16 bank_id_out 0 bank_addr_weights 1664 length 56 bias_offset 0 bank_addr_bias 2436
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2693 bank_id_in 16 bank_id_out 0 bank_addr_weights 1728 length 56 bias_offset 0 bank_addr_bias 2437
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2694 bank_id_in 16 bank_id_out 0 bank_addr_weights 1792 length 56 bias_offset 0 bank_addr_bias 2438
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2695 bank_id_in 16 bank_id_out 0 bank_addr_weights 1856 length 56 bias_offset 0 bank_addr_bias 2439
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2696 bank_id_in 16 bank_id_out 0 bank_addr_weights 1920 length 56 bias_offset 0 bank_addr_bias 2440
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2697 bank_id_in 16 bank_id_out 0 bank_addr_weights 1984 length 56 bias_offset 0 bank_addr_bias 2441
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2698 bank_id_in 16 bank_id_out 0 bank_addr_weights 2048 length 56 bias_offset 0 bank_addr_bias 2442
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2699 bank_id_in 16 bank_id_out 0 bank_addr_weights 2112 length 56 bias_offset 0 bank_addr_bias 2443
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2700 bank_id_in 16 bank_id_out 0 bank_addr_weights 2176 length 56 bias_offset 0 bank_addr_bias 2444
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2701 bank_id_in 16 bank_id_out 0 bank_addr_weights 2240 length 56 bias_offset 0 bank_addr_bias 2445
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2702 bank_id_in 16 bank_id_out 0 bank_addr_weights 2304 length 56 bias_offset 0 bank_addr_bias 2446
+ELEWINIT 0000 0000 bank_id_in 0 shift_read 0 jump_read 16 jump_read_endl 1 id 0 bank_addr_in 2688
+ELEWINIT 0000 0000 bank_id_in 24 shift_read 0 jump_read 16 jump_read_endl 1 id 1 bank_addr_in 2688
+CONV 0000 1000 pad_left 0 pad_top 0 bank_addr_in 672 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2703 bank_id_in 16 bank_id_out 0 bank_addr_weights 2368 length 56 bias_offset 0 bank_addr_bias 2447
+ELEW 0100 0000 num 2 nonlinear_type 1 jump_write 16 jump_write_endl 1 bank_id_out 24 bank_addr_out 2688 width 56 bank_id_prelu 0 bank_addr_prelu 0 valid_pixel_parallel 4 channel_group 16 shift_write 0 shift_write_prelu_n 0
+ELEWINIT 0000 0000 bank_id_in 4 shift_read 0 jump_read 16 jump_read_endl 1 id 0 bank_addr_in 2688
+ELEWINIT 0000 0000 bank_id_in 28 shift_read 0 jump_read 16 jump_read_endl 1 id 1 bank_addr_in 2688
+ELEW 0000 0000 num 2 nonlinear_type 1 jump_write 16 jump_write_endl 1 bank_id_out 28 bank_addr_out 2688 width 56 bank_id_prelu 0 bank_addr_prelu 0 valid_pixel_parallel 4 channel_group 16 shift_write 0 shift_write_prelu_n 0
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 0 bank_id_in 16 bank_id_out 8 bank_addr_weights 1408 length 56 bias_offset 0 bank_addr_bias 2432
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1 bank_id_in 16 bank_id_out 8 bank_addr_weights 1472 length 56 bias_offset 0 bank_addr_bias 2433
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 2 bank_id_in 16 bank_id_out 8 bank_addr_weights 1536 length 56 bias_offset 0 bank_addr_bias 2434
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 3 bank_id_in 16 bank_id_out 8 bank_addr_weights 1600 length 56 bias_offset 0 bank_addr_bias 2435
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 4 bank_id_in 16 bank_id_out 8 bank_addr_weights 1664 length 56 bias_offset 0 bank_addr_bias 2436
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 5 bank_id_in 16 bank_id_out 8 bank_addr_weights 1728 length 56 bias_offset 0 bank_addr_bias 2437
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 6 bank_id_in 16 bank_id_out 8 bank_addr_weights 1792 length 56 bias_offset 0 bank_addr_bias 2438
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 7 bank_id_in 16 bank_id_out 8 bank_addr_weights 1856 length 56 bias_offset 0 bank_addr_bias 2439
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 8 bank_id_in 16 bank_id_out 8 bank_addr_weights 1920 length 56 bias_offset 0 bank_addr_bias 2440
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 9 bank_id_in 16 bank_id_out 8 bank_addr_weights 1984 length 56 bias_offset 0 bank_addr_bias 2441
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 10 bank_id_in 16 bank_id_out 8 bank_addr_weights 2048 length 56 bias_offset 0 bank_addr_bias 2442
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 11 bank_id_in 16 bank_id_out 8 bank_addr_weights 2112 length 56 bias_offset 0 bank_addr_bias 2443
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 12 bank_id_in 16 bank_id_out 8 bank_addr_weights 2176 length 56 bias_offset 0 bank_addr_bias 2444
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 13 bank_id_in 16 bank_id_out 8 bank_addr_weights 2240 length 56 bias_offset 0 bank_addr_bias 2445
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 14 bank_id_in 16 bank_id_out 8 bank_addr_weights 2304 length 56 bias_offset 0 bank_addr_bias 2446
+ELEWINIT 0000 0000 bank_id_in 8 shift_read 0 jump_read 16 jump_read_endl 1 id 0 bank_addr_in 0
+ELEWINIT 0000 0000 bank_id_in 24 shift_read 0 jump_read 16 jump_read_endl 1 id 1 bank_addr_in 0
+CONV 0000 1000 pad_left 0 pad_top 0 bank_addr_in 896 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 15 bank_id_in 16 bank_id_out 8 bank_addr_weights 2368 length 56 bias_offset 0 bank_addr_bias 2447
+ELEW 0100 0000 num 2 nonlinear_type 1 jump_write 16 jump_write_endl 1 bank_id_out 24 bank_addr_out 3584 width 56 bank_id_prelu 0 bank_addr_prelu 0 valid_pixel_parallel 4 channel_group 16 shift_write 0 shift_write_prelu_n 0
+ELEWINIT 0000 0000 bank_id_in 12 shift_read 0 jump_read 16 jump_read_endl 1 id 0 bank_addr_in 0
+ELEWINIT 0000 0000 bank_id_in 28 shift_read 0 jump_read 16 jump_read_endl 1 id 1 bank_addr_in 0
+ELEW 0000 0000 num 2 nonlinear_type 1 jump_write 16 jump_write_endl 1 bank_id_out 28 bank_addr_out 3584 width 56 bank_id_prelu 0 bank_addr_prelu 0 valid_pixel_parallel 4 channel_group 16 shift_write 0 shift_write_prelu_n 0
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 896 bank_id_in 16 bank_id_out 8 bank_addr_weights 1408 length 56 bias_offset 0 bank_addr_bias 2432
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 897 bank_id_in 16 bank_id_out 8 bank_addr_weights 1472 length 56 bias_offset 0 bank_addr_bias 2433
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 898 bank_id_in 16 bank_id_out 8 bank_addr_weights 1536 length 56 bias_offset 0 bank_addr_bias 2434
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 899 bank_id_in 16 bank_id_out 8 bank_addr_weights 1600 length 56 bias_offset 0 bank_addr_bias 2435
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 900 bank_id_in 16 bank_id_out 8 bank_addr_weights 1664 length 56 bias_offset 0 bank_addr_bias 2436
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 901 bank_id_in 16 bank_id_out 8 bank_addr_weights 1728 length 56 bias_offset 0 bank_addr_bias 2437
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 902 bank_id_in 16 bank_id_out 8 bank_addr_weights 1792 length 56 bias_offset 0 bank_addr_bias 2438
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 903 bank_id_in 16 bank_id_out 8 bank_addr_weights 1856 length 56 bias_offset 0 bank_addr_bias 2439
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 904 bank_id_in 16 bank_id_out 8 bank_addr_weights 1920 length 56 bias_offset 0 bank_addr_bias 2440
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 905 bank_id_in 16 bank_id_out 8 bank_addr_weights 1984 length 56 bias_offset 0 bank_addr_bias 2441
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 906 bank_id_in 16 bank_id_out 8 bank_addr_weights 2048 length 56 bias_offset 0 bank_addr_bias 2442
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 907 bank_id_in 16 bank_id_out 8 bank_addr_weights 2112 length 56 bias_offset 0 bank_addr_bias 2443
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 908 bank_id_in 16 bank_id_out 8 bank_addr_weights 2176 length 56 bias_offset 0 bank_addr_bias 2444
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 909 bank_id_in 16 bank_id_out 8 bank_addr_weights 2240 length 56 bias_offset 0 bank_addr_bias 2445
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 910 bank_id_in 16 bank_id_out 8 bank_addr_weights 2304 length 56 bias_offset 0 bank_addr_bias 2446
+ELEWINIT 0000 0000 bank_id_in 8 shift_read 0 jump_read 16 jump_read_endl 1 id 0 bank_addr_in 896 
+ELEWINIT 0000 0000 bank_id_in 24 shift_read 0 jump_read 16 jump_read_endl 1 id 1 bank_addr_in 896
+CONV 0000 1000 pad_left 0 pad_top 0 bank_addr_in 1120 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 911 bank_id_in 16 bank_id_out 8 bank_addr_weights 2368 length 56 bias_offset 0 bank_addr_bias 2447
+ELEW 0100 0000 num 2 nonlinear_type 1 jump_write 16 jump_write_endl 1 bank_id_out 24 bank_addr_out 4480 width 56 bank_id_prelu 0 bank_addr_prelu 0 valid_pixel_parallel 4 channel_group 16 shift_write 0 shift_write_prelu_n 0
+ELEWINIT 0000 0000 bank_id_in 12 shift_read 0 jump_read 16 jump_read_endl 1 id 0 bank_addr_in 896 
+ELEWINIT 0000 0000 bank_id_in 28 shift_read 0 jump_read 16 jump_read_endl 1 id 1 bank_addr_in 896 
+ELEW 0000 0000 num 2 nonlinear_type 1 jump_write 16 jump_write_endl 1 bank_id_out 28 bank_addr_out 4480 width 56 bank_id_prelu 0 bank_addr_prelu 0 valid_pixel_parallel 4 channel_group 16 shift_write 0 shift_write_prelu_n 0
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1792 bank_id_in 16 bank_id_out 8 bank_addr_weights 1408 length 56 bias_offset 0 bank_addr_bias 2432
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1793 bank_id_in 16 bank_id_out 8 bank_addr_weights 1472 length 56 bias_offset 0 bank_addr_bias 2433
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1794 bank_id_in 16 bank_id_out 8 bank_addr_weights 1536 length 56 bias_offset 0 bank_addr_bias 2434
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1795 bank_id_in 16 bank_id_out 8 bank_addr_weights 1600 length 56 bias_offset 0 bank_addr_bias 2435
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1796 bank_id_in 16 bank_id_out 8 bank_addr_weights 1664 length 56 bias_offset 0 bank_addr_bias 2436
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1797 bank_id_in 16 bank_id_out 8 bank_addr_weights 1728 length 56 bias_offset 0 bank_addr_bias 2437
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1798 bank_id_in 16 bank_id_out 8 bank_addr_weights 1792 length 56 bias_offset 0 bank_addr_bias 2438
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1799 bank_id_in 16 bank_id_out 8 bank_addr_weights 1856 length 56 bias_offset 0 bank_addr_bias 2439
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1800 bank_id_in 16 bank_id_out 8 bank_addr_weights 1920 length 56 bias_offset 0 bank_addr_bias 2440
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1801 bank_id_in 16 bank_id_out 8 bank_addr_weights 1984 length 56 bias_offset 0 bank_addr_bias 2441
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1802 bank_id_in 16 bank_id_out 8 bank_addr_weights 2048 length 56 bias_offset 0 bank_addr_bias 2442
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1803 bank_id_in 16 bank_id_out 8 bank_addr_weights 2112 length 56 bias_offset 0 bank_addr_bias 2443
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1804 bank_id_in 16 bank_id_out 8 bank_addr_weights 2176 length 56 bias_offset 0 bank_addr_bias 2444
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1805 bank_id_in 16 bank_id_out 8 bank_addr_weights 2240 length 56 bias_offset 0 bank_addr_bias 2445
+CONV 0000 0000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1806 bank_id_in 16 bank_id_out 8 bank_addr_weights 2304 length 56 bias_offset 0 bank_addr_bias 2446
+ELEWINIT 0000 0000 bank_id_in 8 shift_read 0 jump_read 16 jump_read_endl 1 id 0 bank_addr_in 1792
+ELEWINIT 0000 0000 bank_id_in 24 shift_read 0 jump_read 16 jump_read_endl 1 id 1 bank_addr_in 1792
+CONV 0000 1000 pad_left 0 pad_top 0 bank_addr_in 1344 channel_group 4 channel_offset 0 pad_right 15 pad_bottom 15 bank_addr_out 1807 bank_id_in 16 bank_id_out 8 bank_addr_weights 2368 length 56 bias_offset 0 bank_addr_bias 2447
+ELEW 0100 0000 num 2 nonlinear_type 1 jump_write 16 jump_write_endl 1 bank_id_out 24 bank_addr_out 5376 width 56 bank_id_prelu 0 bank_addr_prelu 0 valid_pixel_parallel 4 channel_group 16 shift_write 0 shift_write_prelu_n 0
+ELEWINIT 0000 0000 bank_id_in 12 shift_read 0 jump_read 16 jump_read_endl 1 id 0 bank_addr_in 1792
+ELEWINIT 0000 0000 bank_id_in 28 shift_read 0 jump_read 16 jump_read_endl 1 id 1 bank_addr_in 1792
+ELEW 0000 0010 num 2 nonlinear_type 1 jump_write 16 jump_write_endl 1 bank_id_out 28 bank_addr_out 5376 width 56 bank_id_prelu 0 bank_addr_prelu 0 valid_pixel_parallel 4 channel_group 16 shift_write 0 shift_write_prelu_n 0
+END 1000 0000 
